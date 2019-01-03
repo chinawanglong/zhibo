@@ -28,14 +28,14 @@ class FrontApplication extends Application{
                 $roomid = intval(Yii::$app->session->get("zhiboid"));
             }
 
-            $roomid = intval($roomid);
+            $roomid = intval($roomid);  // 房间id
             $zhibo= Zhibo::findOne($roomid);
             if(empty($zhibo)){
-                $zhibo= Zhibo::find()->one();
+                $zhibo= Zhibo::find()->one();   // 没找打特定的房间，取第一个房间
             }
 
             if(!empty($zhibo)){
-                Yii::$app->session->set("zhiboid",$zhibo->id);
+                Yii::$app->session->set("zhiboid",$zhibo->id);  // 房间id存储入session
             }
             else{
                 return false;

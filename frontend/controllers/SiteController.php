@@ -52,6 +52,7 @@ class SiteController extends Controller
         if ($action->id == "checklogin") {
             $this->enableCsrfValidation = false;
         }
+
         return parent::beforeAction($action);
 
     }
@@ -70,7 +71,7 @@ class SiteController extends Controller
     /*****网站入口,判断进入直播室还是介绍页****/
     public function actionDefault(){
         $siteconfig = ConfigCategory::getConfigbyalias("siteconfig");
-        /**检查是否将房间页做首页**/
+                /**检查是否将房间页做首页**/
         if(empty($siteconfig->homepage_withroom->val)){
             return $this->redirect(Yii::getAlias("@web/index"));
         }
@@ -106,10 +107,12 @@ class SiteController extends Controller
         $visit->save();
     }
 
+    /**
+     * 首页
+     * @return string|string[]|null
+     */
     public function actionIndex()
     {
-
-
         if(Yii::$app->user->isGuest && !empty($_COOKIE["guest_unable_video"])){
             //return "<div style='color:red;text-align: center;font-size: 20px;'>您的试看已结束,请先注册为会员再观看!<script type='text/javascript'>setTimeout(function(){window.location.href='/site/login';},1500);</script> </div>";
         }
@@ -128,6 +131,7 @@ class SiteController extends Controller
         }
 
         $guest_role = RoomRole::getConfigbyalias("guest");
+       
         $current_user = "";
         /***检查角色是否允许进入房间**/
         $current_role = "";
@@ -277,6 +281,10 @@ Prop3=19,2",Yii::$app->urlmanager->createAbsoluteUrl(["site/index","room"=>$room
         return $this->renderPartial('login', ['zhiboshi' => $zhiboshi, 'customers' => $customers]);
     }
 
+    /**
+     * 登录
+     * @return false|string
+     */
     public function actionTologin()
     {
         $result = ['error' => 0, 'info' => '', 'msg' => ''];
@@ -327,7 +335,10 @@ Prop3=19,2",Yii::$app->urlmanager->createAbsoluteUrl(["site/index","room"=>$room
         }
     }
 
-
+    /**
+     * 是否已登录
+     * @return false|string|\yii\web\Response
+     */
     public function actionChecklogin()
     {
         $guestrole = RoomRole::getConfigbyalias('guest');
@@ -391,6 +402,10 @@ Prop3=19,2",Yii::$app->urlmanager->createAbsoluteUrl(["site/index","room"=>$room
         }
     }
 
+    /**
+     * 注册
+     * @return string
+     */
     public function actionSignup()
     {
         $siteconfig = ConfigCategory::getConfigbyalias("siteconfig");
@@ -485,6 +500,10 @@ Prop3=19,2",Yii::$app->urlmanager->createAbsoluteUrl(["site/index","room"=>$room
     }
 
 
+    /**
+     * 登出
+     * @return array
+     */
     public function actionTologout()
     {
         $result = ['error' => 0, 'msg' => ''];
@@ -502,6 +521,10 @@ Prop3=19,2",Yii::$app->urlmanager->createAbsoluteUrl(["site/index","room"=>$room
         }
     }
 
+    /**
+     * 重置密码
+     * @return false|string
+     */
     public function actionResetpass()
     {
         $result = ['error' => 0, 'msg' => ''];
@@ -547,7 +570,10 @@ Prop3=19,2",Yii::$app->urlmanager->createAbsoluteUrl(["site/index","room"=>$room
         }
     }
 
-
+    /**
+     * 重置昵称
+     * @return false|string
+     */
     public function actionResetnick()
     {
         $result = ['error' => 0, 'msg' => ''];
@@ -704,6 +730,9 @@ Prop3=19,2",Yii::$app->urlmanager->createAbsoluteUrl(["site/index","room"=>$room
         }
     }
 
+    /**
+     * 获取验证码
+     */
     public function actionGetverycode()
     {
         Yii::$app->session->open();
@@ -714,6 +743,10 @@ Prop3=19,2",Yii::$app->urlmanager->createAbsoluteUrl(["site/index","room"=>$room
         /**获得验证码**/
     }
 
+    /**
+     * 验证码
+     * @return int
+     */
     public function actionCodevery()
     {
         Yii::$app->session->open();
