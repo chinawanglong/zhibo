@@ -1,0 +1,60 @@
+*{margin:0;padding:0;}
+html{  }
+body{background:#fff;font-family:microsoft yahei,Helvetica,arial,sans-serif;font-size:14px;color:#888;}
+.grap{width:90%;margin:0 auto;}
+.grap h1{text-align:center;color:#ff0;font-size:36px;background:url(../images/tbg.gif) center no-repeat;}
+li i{font-style:normal;}
+.grap h1 i{font-size:14px;font-style:normal;font-weight:normal;margin-left:10px;color:#E8C2C6;}
+.vote{clear:both;padding:25px;border:2px solid #B20000;border-radius:15px;}
+.vote li{height:115px; padding-top:15px;border-bottom:1px solid #ddd;list-style-type:none;}
+.vote li a{float:right;width:100px; height:100px;display:block;background:url(../images/vote.gif) no-repeat;font-size:0px;overflow:hidden;text-indent:-50px;background-size:100% 100% !important;}
+.vote li a:hover{background:url(../images/voon.gif) no-repeat;}
+.vote li a.voted{background:url(../images/voted.gif) no-repeat;}
+.vote li p{float:left;width:80%;}
+.v_name{line-height:2em;font-size:18px;color:#333;}
+.v_name i{float:right;padding-right:10px;font-style:normal;color:#B20000;}
+.percent_container{height:28px;background:#eee;position:relative;margin-top:8px;}
+.percent_line{position:absolute;left:0;top:0;height:28px;background:#B20000;display:block;}
+.w33{width:33%;}
+.w20{width:20%;}
+.w10{width:10%;}
+.v_text{margin-top:8px;font-size: 14px;line-height: 2em;}
+.v_text span{margin-right:25px;}
+
+@media (max-width: 768px) {
+    body{
+        height:100%;
+    }
+    .grap h1{
+        font-size: 20px;
+        width: 60%;
+        margin: 0 auto;
+    }
+    .vote li{
+        height:90px;
+    }
+    .vote li p{
+        width: 80%;
+    }
+    .vote li a{
+        position: relative;
+        top:25px;
+        right: -10px;
+        width:30px;
+        height:30px;
+        background: url(../images/vote.gif) no-repeat;
+        background-size: 100% 100%;
+    }
+    .v_name{
+        font-size: 12px;
+    }
+    .percent_container{
+        height: 20px;
+    }
+    .percent_line{
+        height: 20px;
+    }
+    .v_text{
+        font-size: 12px;
+    }
+}

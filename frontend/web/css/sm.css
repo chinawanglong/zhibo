@@ -1,0 +1,28 @@
+@media (min-width: 769px) and (max-width: 991px) {
+  .main-content {
+    /*main-content*/
+  }
+  .main-content .nav-left {
+    display: none;
+    /*nav-left*/
+  }
+  .main-content .Y_LeftList {
+    display: none;
+    /*Y_LeftList*/
+  }
+  .main-content .main {
+    left: 0px;
+    /**main**/
+  }
+  .main-content .main .main-top {
+    /**main-top**/
+  }
+  .main-content .main .main-top .user-area {
+    display: none;
+    /*user-area*/
+  }
+  .main-content .main .main-top .chat-video {
+    left: 0px;
+    /**chat-video**/
+  }
+}

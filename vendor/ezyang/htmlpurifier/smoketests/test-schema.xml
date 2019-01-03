@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configdoc>
+ <title>Test Schema</title>
+ <namespace id="Directive">
+  <name>Directive</name>
+  <directive id="Directive.Allowed">
+   <name>Allowed</name>
+   <aliases/>
+   <constraints>
+    <type>string</type>
+    <allowed>
+     <value>apple</value>
+     <value>orange</value>
+     <value>pear</value>
+     <value>peach</value>
+     <value>mango</value>
+    </allowed>
+    <default>'apple'</default>
+   </constraints>
+   <description>
+    <div xmlns="http://www.w3.org/1999/xhtml">This directive has a constrained set of allowed values.</div>
+   </description>
+  </directive>
+  <directive id="Directive.Deprecated">
+   <name>Deprecated</name>
+   <aliases/>
+   <constraints>
+    <type>int</type>
+    <default>0</default>
+   </constraints>
+   <deprecated>
+    <version>1.0.0</version>
+    <use>Directive.Allowed</use>
+   </deprecated>
+   <description>
+    <div xmlns="http://www.w3.org/1999/xhtml">This is a deprecated directive that shouldn't show up on the form.</div>
+   </description>
+  </directive>
+ </namespace>
+ <namespace id="Type">
+  <name>Type</name>
+  <directive id="Type.bool">
+   <name>bool</name>
+   <aliases/>
+   <constraints>
+    <type>bool</type>
+    <default>false</default>
+   </constraints>
+   <description>
+    <div xmlns="http://www.w3.org/1999/xhtml">The boolean type is true or false.</div>
+   </description>
+  </directive>
+  <directive id="Type.float">
+   <name>float</name>
+   <aliases/>
+   <constraints>
+    <type>float</type>
+    <default>3.1415</default>
+   </constraints>
+   <description>
+    <div xmlns="http://www.w3.org/1999/xhtml">The float type is a floating point number.</div>
+   </description>
+  </directive>
+  <directive id="Type.hash">
+   <name>hash</name>
+   <aliases/>
+   <constraints>
+    <type>hash</type>
+    <default>array (
+  'key1' =&gt; 'val1',
+  'key2' =&gt; 'val2',
+)</default>
+   </constraints>
+   <description>
+    <div xmlns="http://www.w3.org/1999/xhtml">The hash type is an associative array of string keys and string values.</div>
+   </description>
+  </directive>
+  <directive id="Type.int">
+   <name>int</name>
+   <aliases/>
+   <constraints>
+    <type>int</type>
+    <default>23</default>
+   </constraints>
+   <description>
+    <div xmlns="http://www.w3.org/1999/xhtml">The int type is an signed integer.</div>
+   </description>
+  </directive>
+  <directive id="Type.istring">
+   <name>istring</name>
+   <aliases/>
+   <constraints>
+    <type>istring</type>
+    <default>'case insensitive'</default>
+   </constraints>
+   <description>
+    <div xmlns="http://www.w3.org/1999/xhtml">The istring type is short (no newlines), must be ASCII and is case-insensitive.</div>
+   </description>
+  </directive>
+  <directive id="Type.itext">
+   <name>itext</name>
+   <aliases/>
+   <constraints>
+    <type>itext</type>
+    <default>'case
+insensitive
+and
+possibly
+quite
+long'</default>
+   </constraints>
+   <description>
+    <div xmlns="http://www.w3.org/1999/xhtml">The text type has newlines, must be ASCII and is case-insensitive.</div>
+   </description>
+  </directive>
+  <directive id="Type.list">
+   <name>list</name>
+   <aliases/>
+   <constraints>
+    <type>list</type>
+    <default>array (
+  0 =&gt; 'item1',
+  1 =&gt; 'item2',
+)</default>
+   </constraints>
+   <description>
+    <div xmlns="http://www.w3.org/1999/xhtml">The list type is a numerically indexed array of strings.</div>
+   </description>
+  </directive>
+  <directive id="Type.lookup">
+   <name>lookup</name>
+   <aliases/>
+   <constraints>
+    <type>lookup</type>
+    <default>array (
+  'key1' =&gt; true,
+  'key2' =&gt; true,
+)</default>
+   </constraints>
+   <description>
+    <div xmlns="http://www.w3.org/1999/xhtml">The lookup type acts just like list, except its elements are unique and are checked with <code>isset($var[$key])</code>.</div>
+   </description>
+  </directive>
+  <directive id="Type.mixed">
+   <name>mixed</name>
+   <aliases/>
+   <constraints>
+    <type>mixed</type>
+    <default>stdClass::__set_state(array(
+))</default>
+   </constraints>
+   <description>
+    <div xmlns="http://www.w3.org/1999/xhtml">The mixed type allows any type, and is not form-editable.</div>
+   </description>
+  </directive>
+  <directive id="Type.nullbool">
+   <name>nullbool</name>
+   <aliases/>
+   <constraints>
+    <type allow-null="yes">bool</type>
+    <default>NULL</default>
+   </constraints>
+   <description>
+    <div xmlns="http://www.w3.org/1999/xhtml">Null booleans need to be treated a little specially. See %Type.nullstring
+for information on what the null flag does.
+</div>
+   </description>
+  </directive>
+  <directive id="Type.nullstring">
+   <name>nullstring</name>
+   <aliases/>
+   <constraints>
+    <type allow-null="yes">string</type>
+    <default>NULL</default>
+   </constraints>
+   <description>
+    <div xmlns="http://www.w3.org/1999/xhtml">The null type is not a type, but a flag that can be added to any type
+making null a valid value for that entry. It's useful for saying, "Let
+the software pick the value for me," or "Don't use this element" when
+false has a special meaning.
+</div>
+   </description>
+  </directive>
+  <directive id="Type.string">
+   <name>string</name>
+   <aliases/>
+   <constraints>
+    <type>string</type>
+    <default>'Case sensitive'</default>
+   </constraints>
+   <description>
+    <div xmlns="http://www.w3.org/1999/xhtml">The string type is short (no newlines) and case-sensitive.</div>
+   </description>
+  </directive>
+  <directive id="Type.text">
+   <name>text</name>
+   <aliases/>
+   <constraints>
+    <type>text</type>
+    <default>'Case sensitive
+and
+possibly
+quite long...'</default>
+   </constraints>
+   <description>
+    <div xmlns="http://www.w3.org/1999/xhtml">The text type has newlines and is case-sensitive.</div>
+   </description>
+  </directive>
+ </namespace>
+</configdoc>

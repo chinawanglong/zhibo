@@ -1,0 +1,88 @@
+#!/usr/local/php/bin/php
+# chkconfig: 2345 10 90
+# description: Meiling Zhibo Server
+<?php
+if (count($argv) < 2) {
+    echo "Please use start,stop,restart,reload as first argument\n";
+    exit;
+}
+$PHPEXEC="/usr/local/php/bin/php";
+$SERVEREXEC = "/usr/local/apache2/htdocs/zhibo/frontend/server/socketserver.php";
+$FLASHSERVEREXEC = "/usr/local/apache2/htdocs/zhibo/frontend/server/flash_policy.php";
+
+$SERVERPIDFILE = "/usr/local/apache2/htdocs/zhibo/frontend/runtime/serverinfo/zhibomain.pid";
+$FLASHSERVERPIDFILE = "/usr/local/apache2/htdocs/zhibo/frontend/runtime/serverinfo/zhibopolicy.pid";
+$command = $argv[1];
+switch ($command) {
+    case "start":
+        if (file_exists($SERVERPIDFILE)) {
+            echo "The zhibo main service is already started !\n";
+        } else {
+            echo "Starting the main zhibo service..\n";
+            system("$PHPEXEC $SERVEREXEC");
+        }
+        if (file_exists($FLASHSERVERPIDFILE)) {
+            echo "The  zhibo flash service is already started !\n";
+        } else {
+            echo "Starting the flash zhibo service..\n";
+            system("$PHPEXEC $FLASHSERVEREXEC");
+        }
+        break;
+    case "stop":
+
+        if (!file_exists($SERVERPIDFILE) && !file_exists($FLASHSERVERPIDFILE)) {
+            echo "The zhibo service is not running\n";
+        } else {
+            echo "Stopping ...\n";
+            if (file_exists($SERVERPIDFILE)) {
+                $serverpid=file_get_contents($SERVERPIDFILE);
+                if(!empty($serverpid)){
+                    system("kill -15 $serverpid");
+                    while (file_exists($SERVERPIDFILE)) {
+                        echo "Waiting for zhibo main service to shutdown ...\n";
+                        sleep(1);
+                    }
+                }
+            }
+            if (file_exists($FLASHSERVERPIDFILE)) {
+                $flashserverpid=file_get_contents($FLASHSERVERPIDFILE);
+                if(!empty($flashserverpid)){
+                    system("kill -15 $flashserverpid");
+                    while (file_exists($FLASHSERVERPIDFILE)) {
+                        echo "Waiting for  zhibo flash service to shutdown ...\n";
+                        sleep(1);
+                    }
+                }
+            }
+            echo "Zhibo service stopped\n";
+        }
+        break;
+    case "restart":
+        system($argv[0] . " stop");
+        system($argv[0] . " start");
+        break;
+    case "reload":
+        if (!file_exists($SERVERPIDFILE) && !file_exists($FLASHSERVERPIDFILE)) {
+            echo "The zhibo service is not running\n";
+        } else {
+            echo "Reloading ...\n";
+            if (file_exists($SERVERPIDFILE)) {
+                $serverpid=file_get_contents($SERVERPIDFILE);
+                if(!empty($serverpid)){
+                    system("kill -USR1 $serverpid");
+                    echo "Waiting for main zhibo service to reload ...\n";
+                }
+            }
+            if (file_exists($FLASHSERVERPIDFILE)) {
+                $flashserverpid=file_get_contents($FLASHSERVERPIDFILE);
+                if(!empty($flashserverpid)){
+                    system("kill -USR1 $flashserverpid");
+                    echo "Waiting for  zhibo flash service to reload ...\n";
+                }
+            }
+            echo "Zhibo service reloaded\n";
+        }
+        break;
+    default:
+        echo "Please use start,stop,restart,reload as first argument\n";
+} 

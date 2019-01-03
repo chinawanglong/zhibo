@@ -1,0 +1,1 @@
+<iframe src="<?= Yii::$app->urlManager->createUrl(['visit/index']); ?>" style="width:100%;height: 500px;" frameborder="0" height="100%"></iframe>

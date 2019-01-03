@@ -1,0 +1,2012 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+html {
+  color: #000;
+  background: #fff;
+  overflow-y: scroll;
+  font: 12px "寰蒋闆呴粦", Microsoft YaHei;
+}
+.picskin{
+  text-align: center;
+  /*border:1px solid #fff;*/
+  /*background: transparent !important;*/
+}
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.hide {
+  display: none;
+}
+.fixed_parent {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+}
+.block_back_one {
+  background: rgba(51, 51, 51, 0.4);
+}
+ul,
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+body {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  width: 100%;
+  overflow: hidden;
+  background-size: 100% 100% !important;
+  background-repeat: no-repeat !important;
+  background-position: 0 0 !important;
+  background: url("../images/default-bag.jpg");
+}
+.header {
+  width: 100%;
+  line-height: 50px;
+  height: 50px;
+  background: rgba(51, 51, 51, 0.3);
+  /***header**/
+}
+.header .header-left {
+  float: left;
+  margin-left: 5px;
+  /*header-left*/
+}
+.header .header-left .logo {
+  display: block;
+  width: 187px;
+  float: left;
+}
+.header .header-left .logo img {
+  height: 50px;
+  width: 100%;
+}
+.header .header-left .online-info {
+  float: left;
+  border-radius: 5px;
+  color: #FF9933;
+  margin-left: 15px;
+  padding-top: 9px;
+  line-height: 30px;
+  font-size: 20px;
+  /*online-info*/
+}
+.header .header-center {
+  float: left;
+  /*header-center*/
+}
+.header .header-center .navlist {
+  float: left;
+  padding: 10px;
+}
+.header .header-center .navlist .nav {
+  display: block;
+  float: left;
+  cursor: pointer;
+  /*border: 1px solid #3b3b3b;*/
+  border-radius: 4px;
+  line-height: 30px;
+  font-size: 15px;
+  padding: 0 10px;
+  /*background-color: #FF9933;*/
+  color: #fff;
+  margin-left: 5px;
+}
+.header .header-center .tel {
+  float: left;
+  width: 144px;
+  height: 32px;
+  background: url(../images/400.png) center no-repeat;
+  margin: 8px 14px;
+}
+.header .header-right {
+  float: right;
+  margin-right: 20px;
+}
+.header .header-right .change_deskback {
+  float: left;
+  color: #fff;
+  line-height: 30px;
+  margin: 10px 10px;
+  padding: 0 10px;
+  color: #f93;
+  border: 1px solid #f93;
+  cursor: pointer;
+}
+.header .header-right .login_area {
+  float: left;
+  /***login_area***/
+}
+.header .header-right .login_area .userinfo {
+  display: block;
+  float: left;
+  color: #fff;
+  height: 30px;
+  line-height: 2em;
+  font-size: 15px;
+  padding: 10px 5px;
+  margin: 0 10px;
+  vertical-align: middle;
+  cursor: pointer;
+  position: relative;
+}
+.header .header-right .login_area .userinfo .username {
+  display: inline-block;
+  height: 30px;
+  position: relative;
+  top: -10px;
+}
+.header .header-right .login_area .userinfo .rolepic {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  margin-left: 10px;
+  border-radius: 50%;
+}
+.header .header-right .login_area .userinfo ul {
+  position: absolute;
+  top: 45px;
+  z-index: 10;
+  background: #fff;
+  display: none;
+  /**ul**/
+}
+.header .header-right .login_area .userinfo ul li {
+  color: #000000;
+  font-size: 12px;
+  line-height: 30px;
+  border-bottom: 1px dashed #999;
+  text-align: center;
+  padding: 0 20px;
+  min-width: 50px;
+}
+.header .header-right .login_area .userinfo ul li:hover {
+  color: #fff;
+  background: #000;
+}
+.header .header-right .login_area .userinfo.logined:hover ul {
+  display: block;
+}
+.header .header-right .login_area .btn {
+  cursor: pointer;
+  float: left;
+  display: inline-block;
+  width: 71px;
+  height: 30px;
+  line-height: 30px;
+  font-size: 15px;
+  color: #fff;
+  margin: 10px 10px;
+  text-align: center;
+  border-radius: 2px;
+}
+.header .header-right .login_area .btn.loginbtn {
+  background: #CC3333;
+}
+.header .header-right .login_area .btn.regbtn {
+  background: #0099CC;
+}
+.main-content {
+  position: absolute;
+  width: 100%;
+  top: 50px;
+  bottom: 0px;
+}
+.main-content .nav-left {
+  top: 10px;
+  width: 77px;
+  /*background: url(../images/leftnav-bg.png) top repeat-y;*/
+  background: rgba(51, 51, 51, 0.3);
+  overflow: auto;
+  /**nav-left**/
+}
+.main-content .nav-left .navlist .nav a {
+  display: block;
+  width: 100%;
+  padding-top: 10px;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+  color: #FF9933;
+}
+.main-content .nav-left .navlist .nav a i {
+  display: block;
+  width: 30px;
+  height: 37px;
+  margin: 0 auto;
+  background-repeat: no-repeat !important;
+}
+.main-content .nav-left .navlist .nav a p {
+  height: 30px;
+  line-height: 30px;
+  font-size: 12px;
+}
+.main-content .nav-left .navlist .nav a.nav1 i {
+  background: url(../images/navs/yykh.png);
+}
+.main-content .nav-left .navlist .nav a.nav2 i {
+  background: url(../images/navs/khzy.png);
+}
+.main-content .nav-left .navlist .nav a.nav3 i {
+  background: url(../images/navs/cjrl.png);
+}
+.main-content .nav-left .navlist .nav a.nav4 i {
+  background: url(../images/navs/rjxz.png);
+}
+.main-content .nav-left .navlist .nav a.nav5 i {
+  background: url(../images/navs/fwdt.png);
+}
+.main-content .nav-left .navlist .nav a.nav6 i {
+  background: url(../images/navs/yjqr.png);
+}
+.main-content .nav-left .navlist .nav a.nav7 i {
+  background: url(../images/navs/pygw.png);
+}
+.main-content .nav-left .navlist .nav a.nav8 i {
+  background: url(../images/navs/nav8.png);
+}
+.main-content .nav-left .navlist .nav a.nav9 i {
+  background: url(../images/navs/nav9.png);
+}
+.main-content .nav-left .navlist .nav a.nav10 i {
+  background: url(../images/navs/nav10.png);
+}
+.main-content .nav-left .navlist .nav a.nav11 i {
+  background: url(../images/navs/nav11.png);
+}
+.main-content .nav-left .navlist .nav a.nav12 i {
+  background: url(../images/navs/nav12.png);
+}
+.main-content .nav-left .navlist .nav a.nav13 i {
+  background: url(../images/navs/nav13.png);
+}
+.main-content .nav-left .navlist .nav a.nav14 i {
+  background: url(../images/navs/nav14.png);
+}
+.main-content .nav-left .navlist .nav:hover a {
+  color: #fff;
+  background: #FF9933;
+}
+.main-content .Y_LeftList {
+  position: absolute;
+  left: 10px;
+  top: 30px;
+  width: 226px;
+  overflow: auto;
+  /**Y_LeftList**/
+}
+.main-content .Y_LeftList .LeftList_box {
+  /**LeftList_box**/
+}
+.main-content .Y_LeftList .LeftList_box h3 {
+  width: 100%;
+  color: #fff;
+  font-weight: bold;
+  font-size: 12px;
+  position: relative;
+  line-height: 36px;
+  text-indent: 1em;
+  overflow-y: hidden;
+  background: url("../images/biaoti.png") no-repeat;
+  background-size: 100% 100%;
+  /**h3**/
+}
+.main-content .Y_LeftList .LeftList_box h3 span {
+  position: absolute;
+  width: 50px;
+  text-align: right;
+  right: 10px;
+  line-height: 36px;
+  text-indent: 0;
+}
+.main-content .Y_LeftList .LeftList_box h3 span a {
+  font-weight: normal;
+  font-size: 12px;
+  color: #fff;
+}
+.main-content .Y_LeftList .LeftList_box .demo {
+  position: relative;
+  overflow: hidden;
+  height: 150px;
+  background: rgba(0, 0, 0, 0.3);
+  /**demo**/
+}
+.main-content .Y_LeftList .LeftList_box .demo .list {
+  width: 95%;
+  height: 150px;
+  overflow: hidden;
+  padding: 5px;
+  /**list**/
+}
+.main-content .Y_LeftList .LeftList_box .demo .list a {
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: block;
+  height: 25px;
+  font-size: 12px;
+  line-height: 25px;
+  font-family: '寰蒋闆呴粦';
+  color: #ffd575;
+  cursor: pointer;
+}
+.main-content .Y_LeftList .LeftList_box .demo .list a:hover {
+  text-decoration: none;
+  background: #ff6600;
+}
+.main-content .main {
+  left: 90px;
+  right: 5px;
+  top: 10px;
+  /***main***/
+}
+.main-content .main .main-top {
+  position: absolute;
+  width: 100%;
+  left: 0px;
+  top: 0px;
+  bottom: 20px;
+  /**main-top**/
+}
+.main-content .main .main-top .user-area {
+  display: none;
+  width: 160px;
+  /*user-area*/
+}
+.main-content .main .main-top .user-area .advertise_lists {
+  /**advertise_lists**/
+}
+.main-content .main .main-top .user-area .advertise_lists a {
+  display: block;
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+.main-content .main .main-top .user-area .advertise_lists a img {
+  width: 100%;
+}
+.main-content .main .main-top .user-area .area-top img {
+  width: 100%;
+}
+.main-content .main .main-top .user-area .area-center {
+  position: absolute;
+  width: 100%;
+  top: 102px;
+  bottom: 210px;
+  /*area-center*/
+}
+.main-content .main .main-top .user-area .area-center .choice-top {
+  height: 36px;
+  line-height: 36px;
+  font-size: 13px;
+  cursor: pointer;
+  text-align: center;
+  background: #889399;
+  color: #fff;
+}
+.main-content .main .main-top .user-area .area-center .choice-top .btn {
+  display: block;
+  float: left;
+  width: 50%;
+}
+.main-content .main .main-top .user-area .area-center .choice-top .btn.active {
+  background: #fff;
+  color: #333;
+}
+.main-content .main .main-top .user-area .area-center .listarea {
+  position: absolute;
+  width: 100%;
+  top: 36px;
+  bottom: 0px;
+  overflow: auto;
+  /**listarea**/
+}
+.main-content .main .main-top .user-area .area-center .listarea .mCSB_container {
+  overflow: visible;
+}
+.main-content .main .main-top .user-area .area-center .listarea .wrapper {
+  display: none;
+  /*wrapper*/
+}
+.main-content .main .main-top .user-area .area-center .listarea .wrapper ul {
+  /*background: #1F1F1F;*/
+  margin-bottom: 20px;
+  overflow: visible;
+  /*ul*/
+}
+.main-content .main .main-top .user-area .area-center .listarea .wrapper ul li.leftuitem {
+  position: relative;
+  padding: 5px;
+  border-bottom: 1px #666 dashed;
+  color: #fff;
+  line-height: 30px;
+  height: 30px;
+  /*li.leftuitem*/
+}
+.main-content .main .main-top .user-area .area-center .listarea .wrapper ul li.leftuitem .favor {
+  display: inline-block;
+  margin-right: 10px;
+  width: 25px;
+  height: 25px;
+  overflow: hidden;
+}
+.main-content .main .main-top .user-area .area-center .listarea .wrapper ul li.leftuitem .nickname {
+  display: inline-block;
+  font-size: 12px;
+  overflow: hidden;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.main-content .main .main-top .user-area .area-center .listarea .wrapper ul li.leftuitem .rolepic {
+  position: absolute;
+  top: 5px;
+  right: 3px;
+  width: 30px;
+  height: 30px;
+  border-radius:50%;
+}
+.main-content .main .main-top .user-area .area-center .listarea .wrapper ul li.leftuitem .handle_area {
+  position: absolute;
+  left: 30px;
+  top: 15px;
+  width: 100px;
+  background: #fff;
+  color: #333D3F;
+  /*handle_area*/
+}
+.main-content .main .main-top .user-area .area-center .listarea .wrapper ul li.leftuitem .handle_area .leftu_handle_item {
+  font-size: 12px;
+  line-height: 2em;
+  text-align: left;
+  border-bottom: 1px dashed #999;
+  cursor: pointer;
+}
+.main-content .main .main-top .user-area .area-center .listarea .wrapper ul li.leftuitem .handle_area .leftu_handle_item i {
+  width: 40px;
+  text-align: center;
+}
+.main-content .main .main-top .user-area .area-center .listarea .wrapper .loadmore {
+  text-align: center;
+  color: #fff;
+  line-height: 25px;
+  height: 28px;
+  border-bottom: 1px #666 dashed;
+  cursor: pointer;
+  /*loadmore*/
+}
+.main-content .main .main-top .user-area .area-center .listarea .wrapper.active {
+  display: block;
+}
+.main-content .main .main-top .user-area .area-bottom {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  height: 210px;
+}
+.main-content .main .main-top .user-area .area-bottom img {
+  width: 100%;
+}
+.main-content .main .main-top .user-area .shrink {
+  position: absolute;
+  top: 50%;
+  right: -10px;
+  width: 10px;
+  height: 76px;
+  background: url(../images/shrink-userlist.png) -29px 0px no-repeat;
+  margin-top: -38px;
+  z-index: 3;
+  cursor: pointer;
+  /*鏀剁缉鎸夐挳*/
+}
+.main-content .main .main-top .user-area .nav_area {
+  /*nav_area*/
+}
+.main-content .main .main-top .user-area .nav_area .navlist .nav a {
+  display: block;
+  width: 100%;
+  padding-top: 10px;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+  color: #FF9933;
+}
+.main-content .main .main-top .user-area .nav_area .navlist .nav a i {
+  display: block;
+  width: 30px;
+  height: 37px;
+  margin: 0 auto;
+  background: url(http://img.lanrentuku.com/img/images/s.png) 0 bottom no-repeat;
+}
+.main-content .main .main-top .user-area .nav_area .navlist .nav a p {
+  height: 30px;
+  line-height: 30px;
+  font-size: 12px;
+}
+.main-content .main .main-top .user-area .nav_area .navlist .nav a.nav1 i {
+  background: url(../images/navs/yykh.png);
+}
+.main-content .main .main-top .user-area .nav_area .navlist .nav a.nav2 i {
+  background: url(../images/navs/khzy.png);
+}
+.main-content .main .main-top .user-area .nav_area .navlist .nav a.nav3 i {
+  background: url(../images/navs/cjrl.png);
+}
+.main-content .main .main-top .user-area .nav_area .navlist .nav a.nav4 i {
+  background: url(../images/navs/rjxz.png);
+}
+.main-content .main .main-top .user-area .nav_area .navlist .nav a.nav5 i {
+  background: url(../images/navs/fwdt.png);
+}
+.main-content .main .main-top .user-area .nav_area .navlist .nav a.nav6 i {
+  background: url(../images/navs/yjqr.png);
+}
+.main-content .main .main-top .user-area .nav_area .navlist .nav a.nav7 i {
+  background: url(../images/navs/pygw.png);
+}
+.main-content .main .main-top .user-area .nav_area .navlist .nav:hover a {
+  color: #fff;
+  background: #FF9933;
+}
+.main-content .main .main-top .user-area.shrinked * {
+  display: none;
+}
+.main-content .main .main-top .user-area.shrinked .shrink {
+  display: block;
+  background-position: 0px 0px;
+}
+.main-content .main .main-top .chat-video {
+  left: 170px;
+  right: 0px;
+  /**chat-video**/
+}
+.main-content .main .main-top .chat-video .left-area {
+  left: 60%;
+  right:0px;
+  border-radius: 10px;
+  /**left-area**/
+}
+.main-content .main .main-top .chat-video .left-area .nav-top {
+  margin-top: 5px;
+  cursor: pointer;
+  height: 25px;
+  line-height: 25px;
+  font-size: 15px;
+  color: #fff;
+  background: url("../images/index_icons.png") 0 -55px no-repeat;
+  padding-left: 30px;
+}
+.main-content .main .main-top .chat-video .left-area .nav-top .tip {
+  float: left;
+}
+.main-content .main .main-top .chat-video .left-area .nav-top .rtip {
+  margin-left: 90px;
+}
+.main-content .main .main-top .chat-video .left-area .chat-area {
+  width: 100%;
+  top: 35px;
+  border-radius: 10px;
+  /**chat-area**/
+}
+.main-content .main .main-top .chat-video .left-area .chat-area .chat-content {
+  position: absolute;
+  top: 5px;
+  left: 0px;
+  right: 0px;
+  bottom: 195px;
+  margin-left: 10px;
+  margin-right: 10px;
+  overflow: auto;
+  /**chat-content**/
+}
+
+.main-content .main .main-top .chat-video .left-area .chat-area.stretched  .chat-content{
+  bottom: 215px;
+}
+.main-content .main .main-top .chat-video .left-area .chat-area .chat-content .loading {
+  display: none;
+  height: 20px;
+  background: url(../images/load_history.gif) center center no-repeat;
+  background-size: 20px 20px;
+  margin-bottom: 10px;
+}
+.main-content .main .main-top .chat-video .left-area .chat-area .chat-content ul.history_ul {
+  /*history_ul*/
+}
+.main-content .main .main-top .chat-video .left-area .chat-area .chat-content ul.history_ul .msgitem {
+  text-align: center;
+  line-height: 34px;
+  word-wrap: break-word;
+  word-break: break-all;
+  margin-bottom: 5px;
+  margin-left: 10px;
+  /*msgitem*/
+}
+.main-content .main .main-top .chat-video .left-area .chat-area .chat-content ul.history_ul .msgitem .time {
+  float: left;
+  color: #fff;
+  border-radius: 5px;
+  padding: 0 7px;
+  background-color: #666;
+  cursor: pointer;
+  position: relative;
+  overflow: visible;
+  display: none;
+  /**time**/
+}
+.main-content .main .main-top .chat-video .left-area .chat-area .chat-content ul.history_ul .msgitem .time .msg_handle_area {
+  position: absolute;
+  left: 10px;
+  top: 15px;
+  width: 100px;
+  background: #fff;
+  color: #333D3F;
+  z-index: 5;
+  /*msg_handle_area*/
+}
+.main-content .main .main-top .chat-video .left-area .chat-area .chat-content ul.history_ul .msgitem .time .msg_handle_area .msg_handle_item {
+  font-size: 12px;
+  line-height: 2em;
+  text-align: left;
+  border-bottom: 1px dashed #999;
+  cursor: pointer;
+}
+.main-content .main .main-top .chat-video .left-area .chat-area .chat-content ul.history_ul .msgitem .time .msg_handle_area .msg_handle_item i {
+  width: 40px;
+  text-align: center;
+}
+.main-content .main .main-top .chat-video .left-area .chat-area .chat-content ul.history_ul .msgitem .rolepic {
+  float: left;
+  width: 28px;
+  height: 28px;
+  margin-top: 2px;
+  margin-left: 6px;
+  border-radius: 15px;
+}
+.main-content .main .main-top .chat-video .left-area .chat-area .chat-content ul.history_ul .msgitem .nickname {
+  float: left;
+  color: #fff;
+  border-radius: 5px;
+  padding: 0px 10px;
+  display: block;
+  background: #333333;
+  margin: 0 6px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  position: relative;
+  overflow: visible;
+}
+.main-content .main .main-top .chat-video .left-area .chat-area .chat-content ul.history_ul .msgitem .nickname .msgu_handle_area {
+  position: absolute;
+  left: 10px;
+  top: 15px;
+  width: 100px;
+  background: #fff;
+  color: #333D3F;
+  z-index: 5;
+  /*****msgu_handle_area*****/
+}
+.main-content .main .main-top .chat-video .left-area .chat-area .chat-content ul.history_ul .msgitem .nickname .msgu_handle_area .msgu_handle_item {
+  font-size: 12px;
+  line-height: 2em;
+  text-align: left;
+  border-bottom: 1px dashed #999;
+  cursor: pointer;
+}
+.main-content .main .main-top .chat-video .left-area .chat-area .chat-content ul.history_ul .msgitem .nickname .msgu_handle_area .msgu_handle_item i {
+  width: 40px;
+  text-align: center;
+}
+.main-content .main .main-top .chat-video .left-area .chat-area .chat-content ul.history_ul .msgitem .nickname.to {
+  background: #333;
+}
+.main-content .main .main-top .chat-video .left-area .chat-area .chat-content ul.history_ul .msgitem .arrow {
+  position: absolute;
+  left: -10px;
+  top: 12px;
+  border: 5px solid transparent;
+  border-right-color: #fff;
+  width: 0;
+  height: 0;
+  display: block;
+}
+.main-content .main .main-top .chat-video .left-area .chat-area .chat-content ul.history_ul .msgitem .toarrow {
+  position: absolute;
+  right: -28px;
+  top: 0px;
+  border: 14px solid transparent;
+  border-left-color: #8470FF;
+  width: 0;
+  height: 0;
+  display: block;
+}
+.main-content .main .main-top .chat-video .left-area .chat-area .chat-content ul.history_ul .msgitem .totip {
+  float: left;
+  position: relative;
+  margin-left: 10px;
+  margin-right: 20px;
+  margin-top: 3px;
+  padding: 0px 12px;
+  background: #8470FF;
+  text-align: center;
+  font-size: 14px;
+  line-height: 28px;
+  color: #fff;
+}
+.main-content .main .main-top .chat-video .left-area .chat-area .chat-content ul.history_ul .msgitem .msg {
+  float: left;
+  position: relative;
+  margin-left: 10px;
+  padding: 0px 12px;
+  background: #fff;
+  text-align: left;
+  font-size: 14px;
+  border-radius: 5px;
+  color: #333;
+  background-color: #fff;
+  /***msg***/
+}
+.main-content .main .main-top .chat-video .left-area .chat-area .chat-content ul.history_ul .msgitem .msg.color_one{
+  font-weight: bold;
+  font-size:16px;
+}
+.main-content .main .main-top .chat-video .left-area .chat-area .chat-content ul.history_ul .msgitem .msg .msg_pic {
+  max-width: 100%;
+  margin: 10px auto;
+}
+.main-content .main .main-top .chat-video .left-area .chat-area .chat-content ul.history_ul .msgitem .handle_area {
+  display: none;
+  float: left;
+  margin-left: 10px;
+  /**handle_area**/
+}
+.main-content .main .main-top .chat-video .left-area .chat-area .chat-content ul.history_ul .msgitem .handle_area .msg_handle_item {
+  float: left;
+  margin-left: 10px;
+  padding: 0px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  background: red;
+  color: #333;
+  text-align: center;
+  font-size: 14px;
+  /**msghandle_item**/
+}
+.main-content .main .main-top .chat-video .left-area .chat-area .chat-content ul.history_ul .msgitem:hover .handle_area {
+  display: block;
+}
+.main-content .main .main-top .chat-video .left-area .chat-area .chat-content ul.history_ul .msgitem.nocheck {
+  /**鏈鏍告牱寮�**/
+}
+.main-content .main .main-top .chat-video .left-area .chat-area .chat-content ul.history_ul .msgitem.nocheck .nickname.from {
+  background: red;
+}
+.main-content .main .main-top .chat-video .left-area .chat-area .chat-handle-area {
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  bottom: 5px;
+  margin-left: 10px;
+  margin-right: 10px;
+  height: 160px;
+  background: rgba(51, 51, 51, 0.4);
+  border-radius: 10px;
+  /**chat-handle-area**/
+}
+
+.main-content .main .main-top .chat-video .left-area .chat-area.stretched  .chat-handle-area {
+  height:210px;
+}
+
+.main-content .main .main-top .chat-video .left-area .chat-area .chat-handle-area .custom-area {
+  height: 30px;
+  line-height: 30px;
+  overflow: hidden;
+  margin: 5px;
+  /**custom-area**/
+}
+.main-content .main .main-top .chat-video .left-area .chat-area .chat-handle-area .custom-area .custom-item {
+  display: block;
+  float: left;
+  line-height: 30px;
+  font-size: 12px;
+  padding-left: 30px;
+  padding-right: 5px;
+  margin-right: 10px;
+  cursor: pointer;
+  background: rgba(0,0,0,0.2) url("../images/qq.png") -5px -5px no-repeat;
+  color: #fff;
+  background-size: 40px 40px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+.main-content .main .main-top .chat-video .left-area .chat-area .chat-handle-area .sendarea {
+  position: absolute;
+  top: 45px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  margin: 5px 5px 0px 5px;
+  background: #fff;
+  border-radius: 5px;
+  /*sendarea*/
+}
+.main-content .main .main-top .chat-video .left-area .chat-area .chat-handle-area .sendarea .toolbar {
+  /*line-height: 20px;height:20px;*/
+  font-size: 12px;
+  /*toolbar*/
+}
+.main-content .main .main-top .chat-video .left-area .chat-area .chat-handle-area .sendarea .toolbar .bar {
+  padding: 0px 3px 0px 23px;
+  height: 24px;
+  line-height: 20px;
+  border: #ccc 1px solid;
+  border-radius: 2px;
+  background: #fff;
+  display: inline-block;
+  cursor: pointer;
+  background: url(../images/toolbar.png) no-repeat;
+}
+.main-content .main .main-top .chat-video .left-area .chat-area .chat-handle-area .sendarea .toolbar .bar:hover {
+  border: #999 1px solid;
+  color: #1874CD;
+}
+.main-content .main .main-top .chat-video .left-area .chat-area .chat-handle-area .sendarea .toolbar .bar.biaoqing {
+  background-position: 4px -35px;
+}
+.main-content .main .main-top .chat-video .left-area .chat-area .chat-handle-area .sendarea .toolbar .bar.biaoqing:hover {
+  background-position: 4px -37px;
+}
+.main-content .main .main-top .chat-video .left-area .chat-area .chat-handle-area .sendarea .toolbar .bar.caitiao {
+  background-position: 3px -77px;
+}
+.main-content .main .main-top .chat-video .left-area .chat-area .chat-handle-area .sendarea .toolbar .bar.img {
+  background-position: 4px 4px;
+}
+.main-content .main .main-top .chat-video .left-area .chat-area .chat-handle-area .sendarea .toolbar .bar.clear {
+  background-position: 4px -116px;
+}
+.main-content .main .main-top .chat-video .left-area .chat-area .chat-handle-area .sendarea .toolbar .bar.scroll {
+  background-position: 4px -155px;
+}
+.main-content .main .main-top .chat-video .left-area .chat-area .chat-handle-area .sendarea .toolbar .bar.scroll.active {
+  background-position: 4px -361px;
+}
+.main-content .main .main-top .chat-video .left-area .chat-area .chat-handle-area .sendarea .toolbar .bar.msglistbtn {
+  background: none;
+  border: #4096f4 1px solid;
+  background: #4096f4;
+  color: #fff;
+  padding-left: 3px;
+}
+.main-content .main .main-top .chat-video .left-area .chat-area .chat-handle-area .sendarea .toolbar .bar.msglistbtn i {
+  margin-right: 5px;
+}
+.main-content .main .main-top .chat-video .left-area .chat-area .chat-handle-area .sendarea .toolbar #select_msgcolor {
+  position: relative;
+  padding: 0px 4px;
+  top: 2px;
+}
+.main-content .main .main-top .chat-video .left-area .chat-area .chat-handle-area .sendarea .toolbar #select_to_user {
+  float: right;
+  background: #fff;
+  padding-left: 15px;
+  margin: 7px 6px 0px 0px;
+}
+.main-content .main .main-top .chat-video .left-area .chat-area .chat-handle-area .sendarea .textbutton {
+  background: #fff;
+  margin-top: 15px;
+  padding-left: 5px;
+  padding-right: 160px;
+  overflow: hidden;
+  position: relative;
+  /**textbutton**/
+}
+.main-content .main .main-top .chat-video .left-area .chat-area .chat-handle-area .sendarea .textbutton .textsend {
+  width: 100%;
+  height: 55px;
+  border: #B67233 1px solid;
+  outline: none;
+  font-size: 15px;
+  font-family: Microsoft Yahei;
+}
+.main-content .main .main-top .chat-video .left-area .chat-area .chat-handle-area .sendarea .textbutton .sendbtn {
+  height: 50px;
+  line-height: 50px;
+  font-size: 15px;
+  width: 140px;
+  border-radius: 5px;
+  position: absolute;
+  top: 0px;
+  right: 10px;
+  background: #66CC66;
+  color: #fff;
+  text-align: center;
+  cursor: pointer;
+}
+.main-content .main .main-top .chat-video .left-area .chat-area .chat-handle-area .sendarea .textbutton .sendbtn.disabled {
+  background-color: #bac0c3;
+}
+.main-content .main .main-top .chat-video .left-area .chat-area .chat-handle-area .sendarea .otherareas {
+  /***areaitem***/
+}
+.main-content .main .main-top .chat-video .left-area .chat-area .chat-handle-area .sendarea .otherareas .areaitem {
+  position: absolute;
+  background: #fff;
+  bottom: 110px;
+  width: 100%;
+  height: 250px;
+  border: 1px solid #ddd;
+  display: none;
+  /**areaitem**/
+}
+.main-content .main .main-top .chat-video .left-area .chat-area .chat-handle-area .sendarea .otherareas .areaitem .container {
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  bottom: 24px;
+  overflow: auto;
+  /***container***/
+}
+.main-content .main .main-top .chat-video .left-area .chat-area .chat-handle-area .sendarea .otherareas .areaitem .container .pageitem {
+  position: absolute;
+  left: 0px;
+  right: 2px;
+  top: 0px;
+  bottom: 0px;
+  overflow: auto;
+  padding: 5px;
+  display: none;
+}
+.main-content .main .main-top .chat-video .left-area .chat-area .chat-handle-area .sendarea .otherareas .areaitem .container .pageitem a {
+  display: block;
+  cursor: pointer;
+}
+.main-content .main .main-top .chat-video .left-area .chat-area .chat-handle-area .sendarea .otherareas .areaitem .container .pageitem.current {
+  display: block;
+}
+.main-content .main .main-top .chat-video .left-area .chat-area .chat-handle-area .sendarea .otherareas .areaitem .page {
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  height: 20px;
+  line-height: 20px;
+  font-size: 12px;
+  text-align: right;
+  padding: 2px 5px;
+  /**page**/
+}
+.main-content .main .main-top .chat-video .left-area .chat-area .chat-handle-area .sendarea .otherareas .areaitem .page a {
+  color: #666;
+  text-align: center;
+  padding: 0 5px;
+  cursor: pointer;
+}
+.main-content .main .main-top .chat-video .left-area .chat-area .chat-handle-area .sendarea .otherareas .areaitem .page a.current {
+  color: #0078b6;
+}
+.main-content .main .main-top .chat-video .left-area .chat-area .chat-handle-area .sendarea .otherareas .areaitem.active {
+  display: block;
+}
+.main-content .main .main-top .chat-video .left-area .chat-area .chat-handle-area .sendarea .otherareas .areaitem.express {
+  /**areaitem.express琛ㄦ儏css**/
+}
+.main-content .main .main-top .chat-video .left-area .chat-area .chat-handle-area .sendarea .otherareas .areaitem.express .container .pageitem a {
+  float: left;
+  display: block;
+  text-align: center;
+  padding: 4px 2px;
+  margin: -1px 0 0 -1px;
+  border: 1px solid #e8e8e8;
+}
+.main-content .main .main-top .chat-video .left-area .chat-area .chat-handle-area .sendarea .otherareas .areaitem.caitiao {
+  /**areaitem.褰╂潯琛ㄦ儏css**/
+}
+.main-content .main .main-top .chat-video .left-area .chat-area .chat-handle-area .sendarea .otherareas .areaitem.caitiao .container .pageitem a {
+  display: block;
+  text-align: center;
+  padding: 4px 2px;
+  margin-top: -1px;
+  border: 1px solid #e8e8e8;
+}
+.main-content .main .main-top .chat-video .left-area .chat-area .otherFunctions {
+  position: absolute;
+  top: 20%;
+  right: 10px;
+}
+.main-content .main .main-top .chat-video .left-area .chat-area .dimensionCode,.main-content .main .main-top .chat-video .left-area .chat-area .rotateMain{
+  display: block;
+  cursor: pointer;
+  color: #fff;
+  margin: 7px 0 0 7px;
+  height: 70px;
+  line-height: 18px;
+  text-align: center;
+}
+.main-content .main .main-top .chat-video .left-area .handler {
+  width: 2px;
+  position: absolute;
+  left: -5px;
+  top: 0px;
+  bottom: 0px;
+  cursor: col-resize;
+}
+.main-content .main .main-top .chat-video .left-area .handler:hover {
+  background: #fff;
+}
+.main-content .main .main-top .chat-video .right-area {
+  width:59%;
+  left:0px;
+  /**video-area**/
+}
+.main-content .main .main-top .chat-video .right-area .videopanel {
+  background: rgba(51, 51, 51, 0.9);
+  position: absolute;
+  top: 0px;
+  bottom: 30%;
+  width: 100%;
+  /**videopanel**/
+}
+.main-content .main .main-top .chat-video .right-area .videopanel .nav-top {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  cursor: pointer;
+  height: 25px;
+  line-height: 25px;
+  font-size: 15px;
+  color: #fff;
+  background: url("../images/index_icons.png") 0 -94px no-repeat;
+  padding-left: 30px;
+  /*nav-top*/
+}
+.main-content .main .main-top .chat-video .right-area .videopanel .nav-top .tip {
+  float: left;
+}
+.main-content .main .main-top .chat-video .right-area .videopanel .nav-top .nav-item {
+  float: left;
+  margin-left: 10px;
+}
+.main-content .main .main-top .chat-video .right-area .videopanel .nav-top .nav-item.r{
+  font-weight:bold;
+  font-size:12px;
+  float:right;
+  color:#fff;
+  margin-right:15px;
+}
+
+.main-content .main .main-top .chat-video .right-area .videopanel .videoarea {
+  position: absolute;
+  top: 35px;
+  bottom: 0px;
+  width: 100%;
+  /**videoarea**/
+}
+.main-content .main .main-top .chat-video .right-area .videopanel .videoarea #video-end-tip {
+  text-align: center;
+  color: #CC3333;
+  font-size: 20px;
+  font-weight: bold;
+  height: 100%;
+}
+.main-content .main .main-top .chat-video .right-area .videopanel .videoarea #video-end-tip p {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  margin-top: -15px;
+}
+.main-content .main .main-top .chat-video .right-area .videopanel .videoarea #flash-container {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  /**flash-container**/
+}
+.main-content .main .main-top .chat-video .right-area .nav-area {
+  position: absolute;
+  top: 70%;
+  bottom: 0px;
+  width: 100%;
+  /**navarea**/
+}
+.main-content .main .main-top .chat-video .right-area .nav-area .tab {
+  height: 30px;
+  line-height: 30px;
+  font-size: 14px;
+  text-align: center;
+  cursor: pointer;
+  overflow: hidden;
+}
+.main-content .main .main-top .chat-video .right-area .nav-area .tab .item {
+  float: left;
+  display: block;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  margin-left: 2px;
+  padding: 0 15px;
+}
+.main-content .main .main-top .chat-video .right-area .nav-area .tab .item.active {
+  background: #ed4101;
+}
+.main-content .main .main-top .chat-video .right-area .nav-area .tab-contents {
+  border-top: 2px solid #ed4101;
+  overflow: auto;
+  position: absolute;
+  width: 100%;
+  top: 30px;
+  bottom: 0px;
+  /***tab-contents***/
+}
+.main-content .main .main-top .chat-video .right-area .nav-area .tab-contents .tab-content {
+  color: #fff;
+  line-height: 1.5em;
+  font-size: 12px;
+  padding: 5px;
+  overflow: auto;
+  display: none;
+}
+.main-content .main .main-top .chat-video .right-area .nav-area .tab-contents .tab-content.active {
+  display: block;
+}
+.main-content .main .main-bottom {
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  height: 20px;
+  line-height: 20px;
+  overflow: hidden;
+  font-size: 12px;
+  color: #fff;
+  text-align: center;
+  /**main-bottom**/
+}
+.main-content .main .main-bottom a {
+  color: #fff;
+  cursor: pointer;
+}
+#private_window {
+  width: 800px;
+  height: 490px;
+  display: none;
+  z-index: 10;
+  left: 50%;
+  top: 50%;
+  margin-left: -400px;
+  margin-top: -250px;
+  /****private_window****/
+}
+#private_window .left {
+  width: 200px;
+  background: #3987dc;
+  /**left**/
+}
+#private_window .left .uitem {
+  height: 40px;
+  line-height: 40px;
+  border: 1px solid #619fe3;
+  /**uitem**/
+}
+#private_window .left .uitem .userpic {
+  display: block;
+  width: 30px;
+  height: 30px;
+  float: left;
+  margin-left: 15px;
+  margin-top: 5px;
+  border-radius: 50%;
+}
+#private_window .left .uitem .username {
+  display: block;
+  float: left;
+  margin-left: 20px;
+  color: #fff;
+  cursor: pointer;
+}
+#private_window .left .uitem .remove {
+  float: right;
+  color: #333;
+  font-size: 14px;
+  cursor: pointer;
+  display: none;
+  margin-right: 5px;
+}
+#private_window .left .uitem.active {
+  background: #97b7d6;
+  border: 1px solid #97b7d6;
+}
+#private_window .left .uitem:hover {
+  background: #f1f1f1;
+  border: 1px solid #f1f1f1;
+  /**uitem**/
+}
+#private_window .left .uitem:hover .username {
+  color: #3987dc;
+}
+#private_window .left .uitem:hover .remove {
+  display: block;
+}
+#private_window .right {
+  left: 200px;
+  right: 0px;
+  background: #fff;
+  /**right**/
+}
+#private_window .right .right_top {
+  height: 60px;
+  width: 100%;
+  cursor: move;
+  /**right_top**/
+}
+#private_window .right .right_top .headinfo {
+  line-height: 30px;
+  float: left;
+  margin-top: 10px;
+  max-width:500px;
+  /**headinfo**/
+}
+#private_window .right .right_top .headinfo .username {
+  display: block;
+  float: left;
+  font-size: 12px;
+  color: #333;
+  font-weight: bold;
+  margin-left: 15px;
+  max-width: 85px;
+}
+#private_window .right .right_top .headinfo .rolename {
+  display: block;
+  float: left;
+  font-size: 12px;
+  line-height: 20px;
+  font-weight: bold;
+  margin-top: 5px;
+  margin-left: 20px;
+  color: #fff;
+  background: #ff9966;
+  padding: 0 5px;
+  border-radius: 3px;
+}
+#private_window .right .right_top .headinfo .info
+{
+  float:left;
+  margin-left:20px;
+  max-width:300px;
+  overflow:hidden;
+  display:block;
+  font-size:12px;
+  line-height:20px;
+  margin-top: -3px;
+}
+#private_window .right .right_top .close {
+  float: right;
+  text-align: center;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  color: #333;
+  font-weight: bold;
+  font-size: 12px;
+  cursor: pointer;
+}
+#private_window .right .right_content {
+  position: absolute;
+  top: 50px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  background: #cad4de;
+  color: #474747;
+  font-family: 'Microsoft YaHei';
+  border-radius: 0 4px 0 0;
+  /**right_content**/
+}
+#private_window .right .right_content .chat_center {
+  left: 0px;
+  right: 160px;
+  background: #f3f3f3;
+  bottom: 1px;
+  /**chat_center**/
+}
+#private_window .right .right_content .chat_center .msg_area {
+  position: absolute;
+  top: 0px;
+  bottom: 96px;
+  left: 10px;
+  right: 0px;
+  /**msg_area**/
+}
+#private_window .right .right_content .chat_center .msg_area .loading {
+  display: none;
+  height: 20px;
+  background: url(../images/load_history.gif) center center no-repeat;
+  background-size: 20px 20px;
+  margin-bottom: 10px;
+}
+#private_window .right .right_content .chat_center .msg_area ul.history_ul {
+  display: none;
+  /*history_ul*/
+}
+#private_window .right .right_content .chat_center .msg_area ul.history_ul li {
+  text-align: center;
+  line-height: 34px;
+  word-wrap: break-word;
+  word-break: break-all;
+  margin-bottom: 20px;
+  /*li*/
+}
+#private_window .right .right_content .chat_center .msg_area ul.history_ul li .time {
+  float: left;
+  border-radius: 5px;
+  padding: 0 7px;
+  color: #4153b0;
+  /**time**/
+}
+#private_window .right .right_content .chat_center .msg_area ul.history_ul li .rolepic {
+  float: left;
+  width: 28px;
+  height: 28px;
+  margin-top: 2px;
+  margin-left: 6px;
+  border-radius: 15px;
+}
+#private_window .right .right_content .chat_center .msg_area ul.history_ul li .nickname {
+  float: left;
+  border-radius: 5px;
+  padding: 0px 10px;
+  display: block;
+  color: #fff;
+  margin: 0 6px;
+  background:#3f98fd;
+}
+#private_window .right .right_content .chat_center .msg_area ul.history_ul li .arrow {
+  position: absolute;
+  left: -10px;
+  top: 12px;
+  border: 5px solid transparent;
+  border-right-color: #fff;
+  width: 0;
+  height: 0;
+  display: block;
+}
+#private_window .right .right_content .chat_center .msg_area ul.history_ul li .msg {
+  position: relative;
+  margin-left: 10px;
+  padding: 0px 12px;
+  background: #fff;
+  text-align: left;
+  font-size: 14px;
+  border-radius: 5px;
+  color: #333;
+  background-color: #fff;
+  margin-top: 45px;
+  /***msg***/
+}
+#private_window .right .right_content .chat_center .msg_area ul.history_ul li .msg .msg_pic {
+  max-width: 150px;
+  margin: 10px auto;
+}
+#private_window .right .right_content .chat_center .msg_area ul.history_ul li .msg:before,
+#private_window .right .right_content .chat_center .msg_area ul.history_ul li .msg:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+#private_window .right .right_content .chat_center .msg_area ul.history_ul.active {
+  display: block;
+}
+#private_window .right .right_content .chat_center .send_area {
+  position: absolute;
+  height: 96px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  background: #fff;
+  /**send_area**/
+}
+#private_window .right .right_content .chat_center .send_area .toolbar {
+  /*line-height: 20px;height:20px;*/
+  font-size: 12px;
+  /*toolbar*/
+}
+#private_window .right .right_content .chat_center .send_area .toolbar .bar {
+  padding: 0px 3px 0px 23px;
+  height: 24px;
+  line-height: 20px;
+  border: #ccc 1px solid;
+  border-radius: 2px;
+  background: #fff;
+  display: inline-block;
+  cursor: pointer;
+  background: url(../images/toolbar.png) no-repeat;
+}
+#private_window .right .right_content .chat_center .send_area .toolbar .bar:hover {
+  border: #999 1px solid;
+  color: #1874CD;
+}
+#private_window .right .right_content .chat_center .send_area .toolbar .bar.biaoqing {
+  background-position: 4px -35px;
+}
+#private_window .right .right_content .chat_center .send_area .toolbar .bar.biaoqing:hover {
+  background-position: 4px -37px;
+}
+#private_window .right .right_content .chat_center .send_area .toolbar .bar.caitiao {
+  background-position: 3px -77px;
+}
+#private_window .right .right_content .chat_center .send_area .toolbar .bar.img {
+  background-position: 4px 4px;
+}
+#private_window .right .right_content .chat_center .send_area .textbutton {
+  margin-top: 15px;
+  padding-left: 5px;
+  padding-right: 160px;
+  overflow: hidden;
+  position: relative;
+  /**textbutton**/
+}
+#private_window .right .right_content .chat_center .send_area .textbutton .textsend {
+  width: 100%;
+  height: 55px;
+  border: none;
+  outline: none;
+  font-size: 20px;
+  font-family: Microsoft Yahei;
+}
+#private_window .right .right_content .chat_center .send_area .textbutton .sendbtn {
+  height: 50px;
+  line-height: 50px;
+  font-size: 15px;
+  width: 140px;
+  border-radius: 5px;
+  position: absolute;
+  top: 0px;
+  right: 10px;
+  background: #66CC66;
+  color: #fff;
+  text-align: center;
+  cursor: pointer;
+}
+#private_window .right .right_content .chat_center .send_area .textbutton .sendbtn.disabled {
+  background-color: #bac0c3;
+}
+#private_window .right .right_content .chat_center .send_area .otherareas {
+  /***areaitem***/
+}
+#private_window .right .right_content .chat_center .send_area .otherareas .areaitem {
+  position: absolute;
+  background: #fff;
+  bottom: 105px;
+  width: 100%;
+  height: 250px;
+  border: 1px solid #ddd;
+  display: none;
+  /**areaitem**/
+}
+#private_window .right .right_content .chat_center .send_area .otherareas .areaitem .container {
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  bottom: 24px;
+  overflow: auto;
+  /***container***/
+}
+#private_window .right .right_content .chat_center .send_area .otherareas .areaitem .container .pageitem {
+  position: absolute;
+  left: 0px;
+  right: 2px;
+  top: 0px;
+  bottom: 0px;
+  overflow: auto;
+  padding: 5px;
+  display: none;
+}
+#private_window .right .right_content .chat_center .send_area .otherareas .areaitem .container .pageitem a {
+  cursor: pointer;
+}
+#private_window .right .right_content .chat_center .send_area .otherareas .areaitem .container .pageitem.current {
+  display: block;
+}
+#private_window .right .right_content .chat_center .send_area .otherareas .areaitem .page {
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  height: 20px;
+  line-height: 20px;
+  font-size: 12px;
+  text-align: right;
+  padding: 2px 5px;
+  /**page**/
+}
+#private_window .right .right_content .chat_center .send_area .otherareas .areaitem .page a {
+  color: #666;
+  text-align: center;
+  padding: 0 5px;
+  cursor: pointer;
+}
+#private_window .right .right_content .chat_center .send_area .otherareas .areaitem .page a.current {
+  color: #0078b6;
+}
+#private_window .right .right_content .chat_center .send_area .otherareas .areaitem.active {
+  display: block;
+}
+#private_window .right .right_content .chat_center .send_area .otherareas .areaitem.express {
+  /**areaitem.express琛ㄦ儏css**/
+}
+#private_window .right .right_content .chat_center .send_area .otherareas .areaitem.express .container .pageitem a {
+  float: left;
+  display: block;
+  text-align: center;
+  padding: 4px 2px;
+  margin: -1px 0 0 -1px;
+  border: 1px solid #e8e8e8;
+}
+#private_window .right .right_content .chat_right {
+  right: 0px;
+  width: 160px;
+  /**chat_right**/
+}
+#loginform,
+#regform,
+#resetpass_form,
+#resetnickname_form {
+  /****/
+}
+#loginform .input_panel,
+#regform .input_panel,
+#resetpass_form .input_panel,
+#resetnickname_form .input_panel,
+#changephoto_form .input_panel{
+  background: #f5f5f5;
+  overflow: hidden;
+  border-radius: 3px;
+  padding: 40px 20px;
+  /**input_panel**/
+}
+#loginform .input_panel .title,
+#regform .input_panel .title,
+#resetpass_form .input_panel .title,
+#resetnickname_form .input_panel .title,
+#changephoto_form .input_panel .title{
+  text-align: center;
+  font-size: 26px;
+  color: #666;
+}
+#loginform .input_panel .username,
+#regform .input_panel .username,
+#resetpass_form .input_panel .username,
+#resetnickname_form .input_panel .username,
+#loginform .input_panel .ncname,
+#regform .input_panel .ncname,
+#resetpass_form .input_panel .ncname,
+#resetnickname_form .input_panel .ncname,
+#loginform .input_panel .password,
+#regform .input_panel .password,
+#resetpass_form .input_panel .password,
+#resetnickname_form .input_panel .password,
+#loginform .input_panel .repassword,
+#regform .input_panel .repassword,
+#resetpass_form .input_panel .repassword,
+#resetnickname_form .input_panel .repassword,
+#loginform .input_panel .oldpass,
+#regform .input_panel .oldpass,
+#resetpass_form .input_panel .oldpass,
+#resetnickname_form .input_panel .oldpass,
+#loginform .input_panel .newpass,
+#regform .input_panel .newpass,
+#resetpass_form .input_panel .newpass,
+#resetnickname_form .input_panel .newpass,
+#loginform .input_panel .repeatpass,
+#regform .input_panel .repeatpass,
+#resetpass_form .input_panel .repeatpass,
+#resetnickname_form .input_panel .repeatpass,
+#loginform .input_panel .nickname,
+#regform .input_panel .nickname,
+#resetpass_form .input_panel .nickname,
+#resetnickname_form .input_panel .nickname,
+#loginform .input_panel .mobile,
+#regform .input_panel .mobile,
+#resetpass_form .input_panel .mobile,
+#resetnickname_form .input_panel .mobile {
+  display: block;
+  width: 338px;
+  margin: 0 auto;
+  margin-top: 30px;
+  line-height: 18px;
+  padding: 15px;
+  color: #999;
+}
+#loginform .input_panel .verycode,
+#regform .input_panel .verycode,
+#resetpass_form .input_panel .verycode,
+#resetnickname_form .input_panel .verycode {
+  position: relative;
+  width: 372px;
+  margin: 0 auto;
+  margin-top: 30px;
+  line-height: 50px;
+  color: #999;
+}
+#loginform .input_panel .verycode input,
+#regform .input_panel .verycode input,
+#resetpass_form .input_panel .verycode input,
+#resetnickname_form .input_panel .verycode input {
+  width: 170px;
+  line-height: 16px;
+  padding: 15px;
+}
+#loginform .input_panel .verycode img,
+#regform .input_panel .verycode img,
+#resetpass_form .input_panel .verycode img,
+#resetnickname_form .input_panel .verycode img {
+  border: 1px solid #ccc;
+  position: absolute;
+  width: 102px;
+  height: 37px;
+  right: 7px;
+  top: 7px;
+}
+#loginform .input_panel .auto_login,
+#regform .input_panel .auto_login,
+#resetpass_form .input_panel .auto_login,
+#resetnickname_form .input_panel .auto_login {
+  clear: both;
+  height: 40px;
+  line-height: 40px;
+  width: 372px;
+  margin: 0 auto;
+}
+#loginform .input_panel .auto_login input,
+#regform .input_panel .auto_login input,
+#resetpass_form .input_panel .auto_login input,
+#resetnickname_form .input_panel .auto_login input {
+  float: left;
+  margin-top: 14px;
+  margin-right: 5px;
+}
+#loginform .input_panel .auto_login label,
+#regform .input_panel .auto_login label,
+#resetpass_form .input_panel .auto_login label,
+#resetnickname_form .input_panel .auto_login label {
+  color: #969696;
+}
+#loginform .input_panel .auto_login .forget_password,
+#regform .input_panel .auto_login .forget_password,
+#resetpass_form .input_panel .auto_login .forget_password,
+#resetnickname_form .input_panel .auto_login .forget_password {
+  margin-left: 190px;
+  color: #bdbdbd;
+  font-style: normal;
+}
+#loginform .input_panel .submit,
+#regform .input_panel .submit,
+#resetpass_form .input_panel .submit,
+#resetnickname_form .input_panel .submit,
+#changephoto_form .input_panel .submit{
+  display: block;
+  width: 339px;
+  height: 46px;
+  line-height: 46px;
+  margin: 0 auto;
+  margin-top: 20px;
+  background: #c33;
+  color: #fff;
+  text-align: center;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 400;
+}
+#regform {
+  /*娉ㄥ唽琛ㄥ崟*/
+}
+#regform .sendcode_btn {
+  display: inline-block;
+  position: absolute;
+  cursor: pointer;
+  min-width: 102px;
+  height: 37px;
+  right: 7px;
+  top: 7px;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.42857143;
+  text-align: center;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  background: #0099CC;
+  color: #fff;
+}
+#regform .input_panel .submit,
+#resetpass_form .input_panel .submit {
+  margin-top: 30px;
+}
+#changephoto_form .input_panel #select_photo{
+  width:150px;
+  height:150px;
+  margin: 20px auto;
+  border-radius: 50%;
+  background-image: url(../images/resetphotobg.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+#deskback_area {
+  padding: 20px;
+  overflow: hidden;
+}
+#deskback_area img {
+  float: left;
+  width: 100px;
+  height: 80px;
+  cursor: pointer;
+}
+.popwindowarea {
+  height: 100%;
+}
+.popwindowarea .media-area {
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  bottom: 0px;
+  /**media-area**/
+}
+.popwindowarea .media-area .pic {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.popwindowarea .custom-area {
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  bottom: 0px !important;
+  height: 30px;
+  line-height: 30px;
+  overflow: hidden;
+  margin: 5px;
+  /**custom-area**/
+}
+.popwindowarea .custom-area .custom-item {
+  display: block;
+  float: left;
+  line-height: 30px;
+  font-size: 12px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-right: 10px;
+  cursor: pointer;
+  background: #6959CD;
+  color: #fff;
+  background-size: 40px 40px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+/*********系统提示**********/
+.chat-content ul.history_ul .msgitem.systip{
+  line-height: 24px !important;
+  text-align: center !important;
+  margin-bottom: 10px !important;
+}
+.chat-content ul.history_ul .msgitem.systip .time{
+  display:none !important;
+}
+.chat-content ul.history_ul .msgitem.systip .rolepic{
+  display:none !important;
+}
+.chat-content ul.history_ul .msgitem.systip .nickname{
+  display:none !important;
+}
+.chat-content ul.history_ul .msgitem.systip .handle_area{
+  display:none !important;
+}
+.chat-content ul.history_ul .msgitem.systip .msg{
+  float: none !important;
+  display: inline;
+  display: inline-block;
+  -webkit-border-radius: 5px !important;
+  -moz-border-radius: 5px !important;
+  border-radius: 5px !important;
+  padding: 3px 8px !important;
+  background-color: rgba(255,255,255,0.4) !important;
+  color:#CC3333 !important;
+  font-size: 13px !important;
+  font-weight: 400 !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  text-align: center !important;
+
+}
+.chat-content ul.history_ul .msgitem.systip .msg .arrow{
+  display: none !important;
+}
+.chat-content ul.history_ul .msgitem.systip .msg .empic{
+  height:1.5em;vertical-align:middle;
+}
+
+/***喊单平仓***/
+.handan_detail .show_detail,.pingcang_detail .show_detail{
+  height: 25px;
+  border-top: 1px solid #CCC;
+  padding: 4px 0 0;
+  margin: 6px auto 0;
+}
+.handan_detail .show_detail .viewbilldetail,.pingcang_detail .show_detail .viewbilldetail{
+  background-color: #e93f3f;
+  color: #fff;
+  text-decoration: none;
+  width: 95px;
+  text-align: center;
+  display: block;
+  float: right;
+  font-size:12px;
+  line-height: 2em;
+  cursor: pointer;
+}
+
+/***飞屏样式***/
+.fly_roll{
+  position: absolute;
+  font-size:40px !important;
+  line-height: 2em;
+  z-index:10;
+  color:#fff;
+  min-width: 100000px;
+}
+.fly_roll .empic{
+  max-width:150px;
+}
+.fly_roll .msg_pic{
+  max-width:200px;
+}
+
+/***聊天上部滚动***/
+
+.chat-handle-area .notice {
+  height: 40px;
+  line-height: 40px;
+  position: relative;
+  /*
+  background: rgba(0, 0, 0, .4);
+  border: 1px solid rgba(0, 0, 0, .4);
+  */
+  border-top: 0px;
+}
+.chat-handle-area .notice .title {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  display: block;
+  width: 40px;
+  text-align: center;
+  font-size: 14px;
+  line-height: 100%;
+  height: 100%;
+  color: #fff;
+  z-index: 2;
+}
+.chat-handle-area .notice .title i{
+  line-height: 40px;
+}
+.chat-handle-area .notice  .txt {
+  height: 100%;
+  z-index: 1;
+  font-size: 14px;
+}
+#marquee2 {
+  height: 40px;
+  overflow: hidden;
+}
+#marquee2 ul li {
+  padding: 0 10px;
+  line-height: 40px;
+  height: 40px;
+  overflow: hidden;
+  color: #F44336;
+  padding-left: 40px;
+}
+
+#dianzan {
+  width: 115px;
+  position: absolute;
+  right: 5px;
+  bottom: -15px;
+}
+
+#dianzan .heart {
+  width: 115px;
+  height: 115px;
+  background: url('/images/dianzan.png') no-repeat;
+  background-size: 3335px;
+  background-position: 0 0;
+  cursor: pointer;
+  -webkit-transition: background-position 0.5s steps(28);
+  transition: background-position 0.5s steps(28);
+  -webkit-transition-duration: 0s;
+  transition-duration: 0s;
+  z-index: 10;
+  position: absolute;
+  right: -14px;
+  bottom: 60px;
+}
+
+#dianzan .heart.is-active {
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  background-position: -3220px 0;
+}
+
+#dianzan .like-num {
+  border-radius: 50px;
+  min-width: 14px;
+  height: 16px;
+  line-height: 16px;
+  padding: 0 10px;
+  color: #fff;
+  font-size: 12px;
+  text-align: center;
+  line-height: auto;
+  background: rgba(0, 0, 0, 0.3);
+  display: block;
+  margin: auto;
+  position: absolute;
+  transform: translateX(50%);
+  right: 44px;
+  bottom: 70px;
+  z-index: 1;
+
+}
+#dianzan .heart .icon {
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+}
+#dianzan .heart .icon-aixin {
+  position: absolute;
+  color: #ffffff;
+  font-size: 30px;
+  z-index: 1000;
+  left: 50px;
+  top: -90px;
+}
+
+/**顶部图案保存**/
+.header .header-center .navlist .nav.desktop{
+  color:#FF0 !important;
+  padding-left: 36px !important;
+  background: url(/images/pic1.png) no-repeat 10px 50%;
+  background-size: auto 20px;
+}
+.header .header-center .navlist .nav.nav1{
+  color:#FFF !important;
+  padding-left: 36px !important;
+  background: url(/images/daohang.png) no-repeat 10px 50%;
+  background-size: auto 20px;
+}
+.header .header-center .navlist .nav.nav2{
+  color:#FFF !important;
+  padding-left: 36px !important;
+  background: url(/images/kaihu.png) no-repeat 10px 50%;
+  background-size: auto 20px;
+}
+.header .header-center .navlist .nav.nav4{
+  color:#FFF !important;
+  padding-left: 36px !important;
+  background: url(/images/zaixiankf.png) no-repeat 10px 50%;
+  background-size: auto 20px;
+}

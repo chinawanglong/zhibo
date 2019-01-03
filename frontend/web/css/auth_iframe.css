@@ -1,0 +1,388 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-size: 0;
+    font-family: Helvetica, Tahoma, Arial, "PingFang SC", "Hiragino Sans GB", "Heiti SC", STXihei, "Microsoft YaHei", SimHei, "WenQuanYi Micro Hei";
+    box-sizing: border-box;
+}
+body {
+    background-color: #525252;
+}
+
+#loginarea,#regarea,#resetnicknamearea,#resetpassarea,#changephoto,#zhibocontrol{
+    max-width: 100%;
+    max-height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+
+#loginarea{
+    width: 500px;
+    height: 413px;
+}
+
+#regarea{
+    width: 500px;
+    height: 598px;
+}
+
+#resetnicknamearea{
+    width: 500px;
+    height: 262px;
+}
+
+#resetpassarea{
+    width: 500px;
+    height: 436px;
+}
+
+#changephoto{
+    width: 500px;
+    height: 350px;
+}
+
+
+#loginform,
+#regform,
+#resetpass_form,
+#resetnickname_form {
+    /****/
+}
+#loginform .input_panel,
+#regform .input_panel,
+#resetpass_form .input_panel,
+#resetnickname_form .input_panel,
+#changephoto_form .input_panel,
+#zhibocontrol .input_panel{
+    overflow: hidden;
+    border-radius: 3px;
+    padding: 40px 20px;
+    /**input_panel**/
+}
+#loginform .input_panel .title,
+#regform .input_panel .title,
+#resetpass_form .input_panel .title,
+#resetnickname_form .input_panel .title,
+#changephoto_form .input_panel .title,
+#zhibocontrol .input_panel .title{
+    text-align: center;
+    font-size: 26px;
+    color: #fff;
+}
+#loginform .input_panel .username,
+#regform .input_panel .username,
+#resetpass_form .input_panel .username,
+#resetnickname_form .input_panel .username,
+#loginform .input_panel .ncname,
+#regform .input_panel .ncname,
+#resetpass_form .input_panel .ncname,
+#resetnickname_form .input_panel .ncname,
+#loginform .input_panel .password,
+#regform .input_panel .password,
+#resetpass_form .input_panel .password,
+#resetnickname_form .input_panel .password,
+#loginform .input_panel .repassword,
+#regform .input_panel .repassword,
+#resetpass_form .input_panel .repassword,
+#resetnickname_form .input_panel .repassword,
+#loginform .input_panel .oldpass,
+#regform .input_panel .oldpass,
+#resetpass_form .input_panel .oldpass,
+#resetnickname_form .input_panel .oldpass,
+#loginform .input_panel .newpass,
+#regform .input_panel .newpass,
+#resetpass_form .input_panel .newpass,
+#resetnickname_form .input_panel .newpass,
+#loginform .input_panel .repeatpass,
+#regform .input_panel .repeatpass,
+#resetpass_form .input_panel .repeatpass,
+#resetnickname_form .input_panel .repeatpass,
+#loginform .input_panel .nickname,
+#regform .input_panel .nickname,
+#resetpass_form .input_panel .nickname,
+#resetnickname_form .input_panel .nickname,
+#loginform .input_panel .mobile,
+#regform .input_panel .mobile,
+#resetpass_form .input_panel .mobile,
+#resetnickname_form .input_panel .mobile {
+    display: block;
+    width: 338px;
+    margin: 0 auto;
+    margin-top: 30px;
+    line-height: 18px;
+    padding: 15px;
+    color: #999;
+}
+#loginform .input_panel .verycode,
+#regform .input_panel .verycode,
+#resetpass_form .input_panel .verycode,
+#resetnickname_form .input_panel .verycode {
+    position: relative;
+    width: 370px;
+    margin: 0 auto;
+    margin-top: 30px;
+    line-height: 50px;
+    color: #999;
+}
+#loginform .input_panel .verycode input,
+#regform .input_panel .verycode input,
+#resetpass_form .input_panel .verycode input,
+#resetnickname_form .input_panel .verycode input {
+    width: 170px;
+    line-height: 16px;
+    padding: 15px;
+}
+#loginform .input_panel .verycode img,
+#regform .input_panel .verycode img,
+#resetpass_form .input_panel .verycode img,
+#resetnickname_form .input_panel .verycode img {
+    /*border: 1px solid #ccc;*/
+    position: absolute;
+    width: 102px;
+    height: 37px;
+    right: 0px;
+    top: 7px;
+}
+#loginform .input_panel .auto_login,
+#regform .input_panel .auto_login,
+#resetpass_form .input_panel .auto_login,
+#resetnickname_form .input_panel .auto_login {
+    clear: both;
+    height: 40px;
+    line-height: 40px;
+    width: 338px;
+    margin: 0 auto;
+}
+#loginform .input_panel .auto_login input,
+#regform .input_panel .auto_login input,
+#resetpass_form .input_panel .auto_login input,
+#resetnickname_form .input_panel .auto_login input {
+    float: left;
+    margin-top: 14px;
+    margin-right: 5px;
+}
+#loginform .input_panel .auto_login label,
+#regform .input_panel .auto_login label,
+#resetpass_form .input_panel .auto_login label,
+#resetnickname_form .input_panel .auto_login label {
+    color: #969696;
+}
+#loginform .input_panel .auto_login .forget_password,
+#regform .input_panel .auto_login .forget_password,
+#resetpass_form .input_panel .auto_login .forget_password,
+#resetnickname_form .input_panel .auto_login .forget_password {
+    margin-left: 190px;
+    color: #bdbdbd;
+    font-style: normal;
+}
+#loginform .input_panel .submit,
+#regform .input_panel .submit,
+#resetpass_form .input_panel .submit,
+#resetnickname_form .input_panel .submit,
+#changephoto_form .input_panel .submit,
+#zhibocontrol .input_panel .submit{
+    display: block;
+    width: 339px;
+    height: 46px;
+    line-height: 46px;
+    margin: 0 auto;
+    margin-top: 20px;
+    background: #c33;
+    color: #fff;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 400;
+}
+#regform {
+    /*娉ㄥ唽琛ㄥ崟*/
+}
+#regform .sendcode_btn {
+    display: inline-block;
+    position: absolute;
+    cursor: pointer;
+    min-width: 102px;
+    height: 37px;
+    right: 0px;
+    top: 7px;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    background: #0099CC;
+    color: #fff;
+}
+#regform .input_panel .submit,
+#resetpass_form .input_panel .submit {
+    margin-top: 30px;
+}
+#changephoto_form .input_panel #select_photo{
+    width:150px;
+    height:150px;
+    margin: 20px auto;
+    border-radius: 50%;
+    background-image: url(../images/resetphotobg.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+
+#addchilduser_form .input_panel .item{
+    text-align: center;
+    margin: 20px auto;
+    /*padding: 20px 10px;
+    border:1px dashed #fff;*/
+}
+
+#addchilduser_form .input_panel .item *{
+    text-align: center;
+    font-size:15px;
+    line-height: 2em;
+    height: 2em;
+    border:none;
+}
+
+#addchilduser_form .input_panel .item input{
+    width: 60%;
+    margin-right:4%;
+}
+
+#addchilduser_form .input_panel .item select{
+    width: 35%;
+}
+
+#addchilduser_form .input_panel .addone{
+    width:50px;
+    text-align: center;
+    font-size: 30px;
+    line-height: 50px;
+    height: 50px;
+    color:#fff;
+    border:1px solid #fff;
+    margin:0 auto;
+    cursor: pointer;
+}
+
+
+@media (max-width: 768px) {
+    #loginform,
+    #regform,
+    #resetpass_form,
+    #resetnickname_form {
+        /**form**/
+    }
+    #loginform .input_panel,
+    #regform .input_panel,
+    #resetpass_form .input_panel,
+    #resetnickname_form .input_panel {
+        /**input_panel**/
+    }
+    #loginform .input_panel .username,
+    #regform .input_panel .username,
+    #resetpass_form .input_panel .username,
+    #resetnickname_form .input_panel .username,
+    #loginform .input_panel .ncname,
+    #regform .input_panel .ncname,
+    #resetpass_form .input_panel .ncname,
+    #resetnickname_form .input_panel .ncname,
+    #loginform .input_panel .password,
+    #regform .input_panel .password,
+    #resetpass_form .input_panel .password,
+    #resetnickname_form .input_panel .password,
+    #loginform .input_panel .repassword,
+    #regform .input_panel .repassword,
+    #resetpass_form .input_panel .repassword,
+    #resetnickname_form .input_panel .repassword,
+    #loginform .input_panel .oldpass,
+    #regform .input_panel .oldpass,
+    #resetpass_form .input_panel .oldpass,
+    #resetnickname_form .input_panel .oldpass,
+    #loginform .input_panel .newpass,
+    #regform .input_panel .newpass,
+    #resetpass_form .input_panel .newpass,
+    #resetnickname_form .input_panel .newpass,
+    #loginform .input_panel .repeatpass,
+    #regform .input_panel .repeatpass,
+    #resetpass_form .input_panel .repeatpass,
+    #resetnickname_form .input_panel .repeatpass,
+    #loginform .input_panel .nickname,
+    #regform .input_panel .nickname,
+    #resetpass_form .input_panel .nickname,
+    #resetnickname_form .input_panel .nickname,
+    #loginform .input_panel .mobile,
+    #regform .input_panel .mobile,
+    #resetpass_form .input_panel .mobile,
+    #resetnickname_form .input_panel .mobile {
+        width: 240px;
+        padding: 7px;
+        margin-top: 20px;
+    }
+    #loginform .input_panel .verycode,
+    #regform .input_panel .verycode,
+    #resetpass_form .input_panel .verycode,
+    #resetnickname_form .input_panel .verycode {
+        margin-top: 20px;
+        line-height: 50px;
+        width: 258px;
+        /**verycode**/
+    }
+    #loginform .input_panel .verycode input,
+    #regform .input_panel .verycode input,
+    #resetpass_form .input_panel .verycode input,
+    #resetnickname_form .input_panel .verycode input {
+        width: 120px;
+        padding: 7px;
+    }
+    #loginform .input_panel .verycode img,
+    #regform .input_panel .verycode img,
+    #resetpass_form .input_panel .verycode img,
+    #resetnickname_form .input_panel .verycode img {
+        width: 100px;
+        height: 30px;
+        top: 0px;
+    }
+    #loginform .input_panel .auto_login,
+    #regform .input_panel .auto_login,
+    #resetpass_form .input_panel .auto_login,
+    #resetnickname_form .input_panel .auto_login {
+        width: 258px;
+        /**auto_login**/
+    }
+    #loginform .input_panel .submit,
+    #regform .input_panel .submit,
+    #resetpass_form .input_panel .submit,
+    #resetnickname_form .input_panel .submit,
+    #changephoto_form .input_panel .submit{
+        width: 258px;
+        height: 30px;
+        line-height: 30px;
+        font-size: 15px;
+        margin-top: 20px;
+    }
+    #regform .sendcode_btn {
+        top: 0px;
+        font-size: 12px;
+        height: 30px;
+    }
+    #regform .popwindowarea {
+        height: 300px;
+        /**popwindowarea**/
+    }
+    /*768px*/
+}

@@ -1,0 +1,378 @@
+@media (max-width: 768px) {
+  .header {
+    line-height: 30px;
+    height: 30px;
+    /***header***/
+  }
+  .header .header-left {
+    /**header-left**/
+  }
+  .header .header-left .logo {
+    width: 100px;
+    /***logo***/
+  }
+  .header .header-left .logo img {
+    height: 30px;
+  }
+  .header .header-left .online-info {
+    display: none;
+  }
+  .header .header-center {
+    display: none;
+    /**header-center**/
+  }
+  .header .header-right {
+    margin-right: 0px;
+    /**header-right**/
+  }
+  .header .header-right .login_area {
+    /**login_area**/
+  }
+  .header .header-right .login_area .userinfo {
+    height: 30px;
+    line-height: 30px;
+    margin: 0 5px;
+    font-size: 12px;
+    padding: 0 5px;
+    /**userinfo**/
+  }
+  .header .header-right .login_area .userinfo .username {
+    top: -5px;
+  }
+  .header .header-right .login_area .userinfo .rolepic {
+    height: 20px;
+    width: 20px;
+    margin-top: 5px;
+    margin-left: 5px;
+  }
+  .header .header-right .login_area .userinfo ul {
+    top: 30px;
+  }
+  .header .header-right .login_area .btn {
+    width: 35px;
+    font-size: 12px;
+    margin: 0 5px;
+    border-radius: 0px;
+    /**btn**/
+  }
+  .header .header-right .change_deskback {
+    display: none;
+  }
+  .main-content {
+    top: 30px;
+    /*main-content*/
+  }
+  .main-content .nav-left {
+    display: none !important;
+    /*nav-left*/
+  }
+  .main-content .Y_LeftList {
+    display: none;
+    /*Y_LeftList*/
+  }
+  .main-content .main {
+    top: 0px;
+    left: 0px  !important;
+    right: 0px;
+    /**main**/
+  }
+  .main-content .main .main-top {
+    bottom: 0px;
+    /**main-top**/
+  }
+  .main-content .main .main-top .user-area {
+    display: none !important;
+    /*user-area*/
+  }
+  .main-content .main .main-top .chat-video {
+    left: 0px !important;
+    /**chat-video**/
+  }
+  .main-content .main .main-top .chat-video .left-area {
+    position: absolute;
+    top: 200px;
+    left: 0px;
+    right: 0px;
+    width: auto;
+    /**left-area**/
+  }
+  .main-content .main .main-top .chat-video .left-area .nav-top {
+    display: none;
+    /**nav-top**/
+  }
+  .main-content .main .main-top .chat-video .left-area .chat-area {
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    /**chat-area**/
+  }
+  .main-content .main .main-top .chat-video .left-area .chat-area .chat-content {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 75px;
+    margin: 0px;
+    overflow: auto;
+    /**chat-content**/
+  }
+  .main-content .main .main-top .chat-video .left-area .chat-area.stretched  .chat-content {
+    bottom: 95px;
+  }
+  .main-content .main .main-top .chat-video .left-area .chat-area .chat-handle-area {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    height: 71px;
+    border-radius: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    /**chat-handle-area**/
+  }
+  .main-content .main .main-top .chat-video .left-area .chat-area.stretched  .chat-handle-area {
+    height:95px ;
+  }
+
+  .main-content .main .main-top .chat-video .left-area .chat-area .chat-handle-area .custom-area {
+    display: none;
+  }
+  .main-content .main .main-top .chat-video .left-area .chat-area .chat-handle-area .sendarea {
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    background-color: #fff;
+    margin: 0px;
+    border-radius: 0px;
+    /**sendarea**/
+  }
+  .main-content .main .main-top .chat-video .left-area .chat-area .chat-handle-area .sendarea .otherareas {
+    /*display: none;*/
+  }
+  .main-content .main .main-top .chat-video .left-area .chat-area .chat-handle-area .sendarea .otherareas .areaitem{
+    z-index: 2;
+    bottom:78px;
+  }
+  .main-content .main .main-top .chat-video .left-area .chat-area .chat-handle-area .sendarea .toolbar {
+    margin-top:3px;
+    /*display: none;*/
+  }
+  .main-content .main .main-top .chat-video .left-area .chat-area .chat-handle-area .sendarea .toolbar .bar.msglistbtn {
+    display: none;
+  }
+  .main-content .main .main-top .chat-video .left-area .chat-area .chat-handle-area .sendarea .toolbar #select_to_user{
+    display: none;
+  }
+  .main-content .main .main-top .chat-video .left-area .chat-area .chat-handle-area .sendarea .toolbar #select_msgcolor{
+    display: none;
+  }
+  .main-content .main .main-top .chat-video .left-area .chat-area .chat-handle-area .sendarea .textbutton {
+    margin: 0px 5px;
+    padding: 5px;
+    padding-right: 130px;
+    /**textbutton**/
+  }
+  .main-content .main .main-top .chat-video .left-area .chat-area .chat-handle-area .sendarea .textbutton .textsend {
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    font-size: 15px;
+  }
+  .main-content .main .main-top .chat-video .left-area .chat-area .chat-handle-area .sendarea .textbutton .sendbtn {
+    height: 30px;
+    line-height: 30px;
+    font-size: 15px;
+    width: 110px;
+    border-radius: 5px;
+    top: 7px;
+    right: 5px;
+  }
+  .main-content .main .main-top .chat-video .left-area .chat-area .otherFunctions{
+    display: none;
+  }
+  .main-content .main .main-top .chat-video .left-area .handler {
+    display: none;
+  }
+  .main-content .main .main-top .chat-video .right-area {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    width: auto;
+    height: 200px;
+    /**right-area**/
+  }
+  .main-content .main .main-top .chat-video .right-area .videopanel {
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    /**videopanel**/
+  }
+  .main-content .main .main-top .chat-video .right-area .videopanel .nav-top {
+    display: none;
+  }
+  .main-content .main .main-top .chat-video .right-area .videopanel .videoarea {
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+  }
+  .main-content .main .main-top .chat-video .right-area .nav-area {
+    display: none;
+  }
+  .main-content .main .main-bottom {
+    display: none;
+    /**main-bottom**/
+  }
+  .layui-layer {
+    width: 300px !important;
+    /*layui-layer*/
+  }
+  .layui-layer .layui-layer-content {
+    /*height: auto !important;*/
+  }
+  .layui-layer.layer-popwindow{
+    width:250px !important;
+    /*height: 40% !important;
+    top:30% !important;*/
+  }
+  .mobile_iframe_layer{
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  .mobile_iframe_layer .layui-layer-setwin .layui-layer-close2{
+    top:-15px;
+    right:-15px;
+  }
+  .mobile_nav{
+    display: block !important;
+    position: absolute;
+    top: 200px;
+    left: 0px;
+    right: 0px;
+    width: 100%;
+    height:30px;
+    line-height: 30px;
+    font-size:15px;
+    color:#fff;
+    overflow: hidden;
+  }
+  .mobile_nav ul li{
+    float: right;
+    width:25%;
+    text-align: center;
+  }
+  .mobile_nav ul li.customer{
+    background-color:#34af7f
+  }
+  #loginform,
+  #regform,
+  #resetpass_form,
+  #resetnickname_form {
+    /**form**/
+  }
+  #loginform .input_panel,
+  #regform .input_panel,
+  #resetpass_form .input_panel,
+  #resetnickname_form .input_panel {
+    /**input_panel**/
+  }
+  #loginform .input_panel .username,
+  #regform .input_panel .username,
+  #resetpass_form .input_panel .username,
+  #resetnickname_form .input_panel .username,
+  #loginform .input_panel .ncname,
+  #regform .input_panel .ncname,
+  #resetpass_form .input_panel .ncname,
+  #resetnickname_form .input_panel .ncname,
+  #loginform .input_panel .password,
+  #regform .input_panel .password,
+  #resetpass_form .input_panel .password,
+  #resetnickname_form .input_panel .password,
+  #loginform .input_panel .repassword,
+  #regform .input_panel .repassword,
+  #resetpass_form .input_panel .repassword,
+  #resetnickname_form .input_panel .repassword,
+  #loginform .input_panel .oldpass,
+  #regform .input_panel .oldpass,
+  #resetpass_form .input_panel .oldpass,
+  #resetnickname_form .input_panel .oldpass,
+  #loginform .input_panel .newpass,
+  #regform .input_panel .newpass,
+  #resetpass_form .input_panel .newpass,
+  #resetnickname_form .input_panel .newpass,
+  #loginform .input_panel .repeatpass,
+  #regform .input_panel .repeatpass,
+  #resetpass_form .input_panel .repeatpass,
+  #resetnickname_form .input_panel .repeatpass,
+  #loginform .input_panel .nickname,
+  #regform .input_panel .nickname,
+  #resetpass_form .input_panel .nickname,
+  #resetnickname_form .input_panel .nickname,
+  #loginform .input_panel .mobile,
+  #regform .input_panel .mobile,
+  #resetpass_form .input_panel .mobile,
+  #resetnickname_form .input_panel .mobile {
+    width: 240px;
+    padding: 7px;
+    margin-top: 20px;
+  }
+  #loginform .input_panel .verycode,
+  #regform .input_panel .verycode,
+  #resetpass_form .input_panel .verycode,
+  #resetnickname_form .input_panel .verycode {
+    margin-top: 20px;
+    line-height: 50px;
+    width: 258px;
+    /**verycode**/
+  }
+  #loginform .input_panel .verycode input,
+  #regform .input_panel .verycode input,
+  #resetpass_form .input_panel .verycode input,
+  #resetnickname_form .input_panel .verycode input {
+    width: 120px;
+    padding: 7px;
+  }
+  #loginform .input_panel .verycode img,
+  #regform .input_panel .verycode img,
+  #resetpass_form .input_panel .verycode img,
+  #resetnickname_form .input_panel .verycode img {
+    width: 100px;
+    height: 30px;
+    top: 10px;
+  }
+  #loginform .input_panel .auto_login,
+  #regform .input_panel .auto_login,
+  #resetpass_form .input_panel .auto_login,
+  #resetnickname_form .input_panel .auto_login {
+    width: 258px;
+    /**auto_login**/
+  }
+  #loginform .input_panel .submit,
+  #regform .input_panel .submit,
+  #resetpass_form .input_panel .submit,
+  #resetnickname_form .input_panel .submit,
+  #changephoto_form .input_panel .submit{
+    width: 258px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 15px;
+    margin-top: 10px;
+  }
+  #regform .sendcode_btn {
+    top: 0px;
+    font-size: 12px;
+    height: 30px;
+  }
+  #regform .popwindowarea {
+    height: 300px;
+    /**popwindowarea**/
+  }
+}

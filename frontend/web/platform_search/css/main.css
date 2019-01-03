@@ -1,0 +1,118 @@
+@charset "utf-8";
+*{margin:0px; padding:0px;}
+body{ width:100%; height:100%;font-size:12px; color:#666; font-family:"微软雅黑"}
+ul,li{ list-style:none;}
+img{border:0;}
+a{text-decoration:none; color:#666;}/*连接默认的颜色变化*/
+a:hover{text-decoration:underline;}
+h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal; margin:0;padding:0;}
+.clear{clear:both;height:0;overflow:hidden;}
+.cl:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+.cl { zoom: 1; } 
+
+/*盒子*/
+#wrap{ width:100%; min-height:100%; margin:0; padding:0;}
+
+
+
+/*头部*/
+#header{border-bottom:1px solid #ebebeb}
+.nav{ height:34px; line-height:34px; margin:0 auto; padding:0 30px; }
+.nav a{ color:#666; float:left; margin-right:22px;}
+.nav a.keleyi{ float:right; margin:0}
+.nav a:hover{ color:#e44600}
+/*内容*/
+#content{ width:615px; min-height:600px; margin:30px auto; padding:0;}
+#content h1{ text-align:center; padding:102px 0 55px 0}
+.nav_tab{ height:20px; line-height:20px; text-align:center; padding-bottom:18px; font-size:17px; text-align:center;}
+.nav_tab a{ color:#d7e1e6; margin:0 20px; text-decoration:none}
+.nav_tab a.activ{ color:#6ac2f7}
+
+.search_box{ height:44px;}
+.search_box .text{ width:454px; height:42px; line-height:42px; font-size:16px; color:#333; font-family:"宋体"; background:url(../images/search.png) 0 center no-repeat; padding:0 10px 0 44px; float:left; border:1px solid #269bd7}
+.search_box .btns{ width:105px; height:44px; line-height:44px; font-family:"微软雅黑"; font-size:22px; text-align:center; float:left; border:none; background:#269bd7; color:#fff; float:left; cursor:pointer}
+
+.cx_zs{ height:25px; line-height:25px; margin:20px 0; text-align:center; font-size:14px; color:#a3a3a3;}
+.cx_zs span{ color:#e44600; font-size:20px; font-style:normal; margin:0 5px;}
+.cx_zs span b{ font-weight:normal}
+
+
+#cont{ width:840px; margin:0 auto; padding:0}
+#cont h1{ height:114px; padding-top:48px; text-align:center;}
+.contbox{ border:1px solid #cfdce5; padding:32px 0; margin-bottom:38px;}
+.contbox dl{ overflow:hidden;_zoom:1; padding-bottom:16px;}
+.contbox dl dt{ width:145px; line-height:36px; float:left; margin-right:10px; font-size:18px; color:#333; text-align:right}
+.contbox dl dd{ width:645px; float:left; overflow:hidden;_zoom:1; line-height:36px;}
+.contbox dl dd a{ height:34px; line-height:34px; border:1px solid #b4d2e7; color:#b4d2e7; font-size:16px; text-align:center; text-decoration:none; display:inline-block; *display:inline; *zoom:1; padding:0 18px; margin-right:14px; border-radius:3px;}
+.contbox dl dd a.activ{ color:#3dafea; border:1px solid #3dafea}
+
+.contbox dl dd .input_tx1{ width:582px; height:34px; line-height:34px; font-size:14px; color:#999; border:1px solid #cfdce5; padding:0 10px; font-family:"宋体"; border-radius:3px;}
+.contbox dl dd .input_tx2{ height:106px; padding:5px 10px;}
+.contbox dl dd .input_tx3{ width:220px; float:left; margin-right:16px;}
+.contbox dl dd .yzmn{ width:152px; height:37px; line-height:37px; color:#666; font-size:12px; font-family:"宋体"; font-weight:bold; text-align:center; cursor:pointer; background:url(../images/btn.png) no-repeat; border:none ; float:left}
+.contbox dl dd .yzmn:hover{ background-position:0 -37px;}
+
+.contbox dl dd .yzm{ width:100px; height:36px; float:left;}
+.contbox dl dd .yzm img{ width:100px; height:36px;}
+.contbox dl dd .submit1{ width:253px; height:57px; line-height:57px; text-align:center; cursor:pointer; border:none;background:url(../images/btn.png) 0 -74px no-repeat;margin:36px 0 0 172px; font-family:"微软雅黑"; font-size:24px; color:#fff; }
+.contbox dl dd .submit1:hover{ background-position:0 -131px;}
+
+
+/*底部*/
+#footer{width:100%; /*left:0; bottom:0; position:absolute;*/ text-align:center; background:url(../images/bg01.png) 0 0 repeat-x;}
+#footer p.foot1{ height:47px; line-height:47px; font-size:14px; color:#fff;}
+#footer p.foot1 span.num_show1{ color:#fffd04; font-style:normal;}
+#footer p.foot1 span.num_show1 b{ font-weight:normal}
+#footer p.foot2{ height:50px; line-height:45px;  color:#999;}
+
+#number1,#number2,#number3{ display:none;}
+
+/*弹出窗口*/
+.bd_wd{ width: 100%; position:absolute; z-index:8888; left:0; top:0; font-size:0; filter: Alpha(Opacity=40); opacity:0.4; background:#000;}
+
+.tcwindows{ width:362px; height:380px;  margin-left:-181px; margin-top:-190px; background:#fff; position:fixed !important; z-index:9999; top:50%; left:50%; display:none }
+.close{ width:19px; height:19px; position:absolute; top:10px; right:10px; z-index:100}
+.close a{width:19px; height:19px;  display:block;  cursor:pointer;overflow:hidden; text-indent:-100em; background:url(../images/close.png) no-repeat;}
+.close a:hover{ background-position:0 -19px;}
+.tipbox { position:relative;}
+.tipbox .frist{ height:85px;  text-align:center; margin-bottom:25px; background:url(../images/bg03.png) repeat-x; font-size:22px; padding:0 30px; color:#ffe400}
+.tipbox .frist input{ width:0; height:0; line-height:0; overflow:hidden; border:0; background:none}
+.tipbox dl{ overflow:hidden;_zoom:1; padding-bottom:16px;}
+.tipbox dl dt{ width:94px;line-height:35px; font-size:14px; color:#333; margin-right:10px; text-align:right; float:left ; height:30px;}
+.tipbox dl dd{ width:250px; float:left; line-height:18px; color:#666;}
+.tipbox dl .text{ width:204px; height:35px; line-height:35px; border:1px solid #c2c2c2; padding:0 10px; font-family:"微软雅黑"; font-size:14px; color:#a3a3a3;}
+
+.tipbox dl .yzmn{ width:226px; height:40px; background:url(../images/btn.png) 0 -376px no-repeat; border:none; cursor:pointer;font-family:"宋体"; font-weight:bold; font-size:12px; color:#fff; float:left; margin-right:10px;}
+.tipbox dl .yzmn:hover{background-position: 0 -416px}
+
+.tipbox dl .yzm{ width:72px; height:40px; display:block; float:left;  }
+.tipbox dl .yzm img{ width:72px; height:40px;}
+.tipbox dl .submit{ width:239px; height:54px; background:url(../images/btn.png) 0 -188px no-repeat; border:none; cursor:pointer; margin-top:16px;}
+.tipbox dl .submit:hover{background-position:0 -242px;}
+
+.tcwindows1{ width:370px; height:338px;  margin-left:-185px; margin-top:-169px; background:url(../images/bg02.png) center 0 no-repeat #d9dddf; position:fixed !important; z-index:9999; top:50%; left:50%; display:none }
+
+.tipbox h2{ height:64px; line-height:60px; padding-top:80px; color:#fff; font-size:22px; text-align:center; margin-bottom:18px}
+.tipbox p{ padding:0 35px; font-size:14px; color:#333; line-height:26px;}
+.tipbox p em{ color:#d72310; font-style:normal}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
